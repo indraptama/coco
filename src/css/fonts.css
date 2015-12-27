@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "ionicons";
+  src: url("../assets/fonts/ionicons.ttf") format("truetype");
+}
+
+/* FIRA SANS */
+@font-face {
+  font-family: "FiraSans";
+  font-weight: 200;
+  src: url("../assets/fonts/FiraSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FiraSans";
+  font-weight: 400;
+  src: url("../assets/fonts/FiraSans-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FiraSans";
+  font-weight: 600;
+  src: url("../assets/fonts/FiraSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FiraSans";
+  font-weight: 800;
+  src: url("../assets/fonts/FiraSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClearSans";
+  font-weight: 300;
+  src: url("../assets/fonts/ClearSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClearSans";
+  font-weight: 400;
+  src: url("../assets/fonts/ClearSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClearSans";
+  font-weight: 800;
+  src: url("../assets/fonts/ClearSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  src: url("../assets/fonts/Ubuntu-L.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  src: url("../assets/fonts/Ubuntu-R.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  src: url("../assets/fonts/Ubuntu-M.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 800;
+  src: url("../assets/fonts/Ubuntu-B.ttf") format("truetype");
+}

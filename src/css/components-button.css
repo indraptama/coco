@@ -1,0 +1,27 @@
+@import "suitcss-components-button";
+
+:root {
+  --primaryColor: #4caf50;
+}
+
+.Button {
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.Button--primary {
+  background-color: var(--primaryColor);
+  border: transparent;
+  color: rgba(#fff, 0.875);
+  letter-spacing: 0.1em;
+}
+
+.Button-navToggle {
+  color: inherit;
+  font-family: ionicons;
+  font-size: 24px;
+}
