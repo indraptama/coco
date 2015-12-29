@@ -12,7 +12,9 @@
     "gravitons": "^1.0.0",
     "page": "^1.6.4",
     "suitcss-base": "^1.0.1",
-    "suitcss-components-button": "^5.0.0"
+    "suitcss-components-button": "^5.0.0",
+    "suitcss-components-grid": "^3.0.1",
+    "suitcss-utils-size": "^1.0.1"
   },
   "devDependencies": {
     "alt": "^0.18.1",
