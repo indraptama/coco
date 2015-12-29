@@ -1,13 +1,40 @@
 extends partial/default.jade
 block content
-  section
+  section#ProductList
     .Grid
       .Grid-cell
-        .Product-list
-          .Grid.Grid--withGutter
-            .Grid-cell.u-size1of4
-                img(src="assets/mock1.jpg", alt="")
-            .Grid-cell.u-size3of4
-                .u-textCenter
-                  h4 coconut sugar 1
-          
+        .ProductList
+          .ProductList-img
+            img(src="assets/mock1.jpg", alt="")
+          .ProductList-content
+            .u-textCenter
+              h3 coconut sugar 1
+              p the best coconut sugar
+              a.Button.Button--primary.Button--small.mt1 View more
+      .Grid-cell
+        .ProductList
+          .ProductList-img
+            img(src="assets/mock2.jpg", alt="")
+          .ProductList-content
+            .u-textCenter
+              h3 coconut sugar 2
+              p the best coconut sugar
+              a.Button.Button--primary.Button--small.mt1 View more
+      .Grid-cell
+        .ProductList
+          .ProductList-img
+            img(src="assets/mock3.jpg", alt="")
+          .ProductList-content
+            .u-textCenter
+              h3 coconut sugar 3
+              p the best coconut sugar
+              a.Button.Button--primary.Button--small.mt1 View more
+      .Grid-cell
+        .ProductList
+          .ProductList-img
+            img(src="assets/mock4.jpg", alt="")
+          .ProductList-content
+            .u-textCenter
+              h3 coconut sugar 4
+              p the best coconut sugar
+              a.Button.Button--primary.Button--small.mt1 View more

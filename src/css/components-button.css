@@ -25,3 +25,8 @@
   font-family: ionicons;
   font-size: 24px;
 }
+
+.Button--small {
+  font-size: 0.65rem;
+  padding: 0.5rem 0.75rem;
+}
