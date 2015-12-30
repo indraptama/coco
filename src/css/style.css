@@ -2,13 +2,13 @@
 @import "suitcss-base";
 
 html {
-  font-family: FiraSans;
+  font-family: MuseoSans;
 }
 
 body {
-  color: rgba(#444,0.875);
-  font-size: 0.875rem;
-  line-height: 1.3;
+  color: rgba(#444, 0.875);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 img {
@@ -23,7 +23,8 @@ h4,
 h5,
 h6 {
   color: rgba(#4e2e28, 0.875);
-  font-weight: 700;
+  font-family: MuseoSansR;
+  font-weight: 900;
 }
 
 .icon {
@@ -37,7 +38,7 @@ h6 {
 }
 
 .icon-white {
-  color: rgba(#fff,0.875);
+  color: rgba(#fff, 0.875);
 }
 
 .ProductList {
@@ -47,16 +48,16 @@ h6 {
   justify-content: center;
   padding: 16px;
   position: relative;
-  width: 100%:;
+  width: 100%;
 }
 
 .ProductList-img {
   width: 30%;
 }
 
-/*#ProductList .Grid-cell:nth-child(odd) .ProductList {
+/* #ProductList .Grid-cell:nth-child(odd) .ProductList {
   flex-direction: row-reverse;
-}*/
+} */
 
 .ProductList-content {
   align-items: center;
@@ -70,17 +71,12 @@ h6 {
   text-transform: uppercase;
 }
 
-
-
-
-
 @import "./components-button.css";
 @import "suitcss-components-grid";
 @import "gravitons";
 @import "suitcss-utils-size";
 @import "mainheader.css";
 @import "hero.css";
-
 
 /*
  green500 = #4CAF50,
@@ -94,6 +90,7 @@ h6 {
 .u-textCenter {
   text-align: center;
 }
+
 .Product-list {
   padding: 16px;
 }

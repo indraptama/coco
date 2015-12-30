@@ -69,3 +69,45 @@
   font-weight: 800;
   src: url("../assets/fonts/Ubuntu-B.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "MuseoSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/museo-sans-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../assets/fonts/museo-sans-500-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "coresans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/coresanses.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "coresans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/coresansesbold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MuseoSansR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/MuseoSansRounded-700.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MuseoSansR";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/fonts/MuseoSansRounded-900.otf") format("opentype");
+}
