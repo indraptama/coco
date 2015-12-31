@@ -1,14 +1,24 @@
 @import "./fonts.css";
 @import "suitcss-base";
+@import "suitcss-components-flex-embed";
+@import "suitcss-components-grid";
+@import "gravitons";
+@import "suitcss-utils-size";
+@import "suitcss-utils-flex";
+
+@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
 
 html {
+  background-color: #fafff4;
   font-family: MuseoSans;
 }
 
 body {
-  color: rgba(#444, 0.875);
-  font-size: 1rem;
-  line-height: 1.5;
+  color: rgba(#21392e, 0.875);
+  font-size: 0.875rem;
+  line-height: 1.3;
 }
 
 img {
@@ -24,59 +34,8 @@ h5,
 h6 {
   color: rgba(#4e2e28, 0.875);
   font-family: MuseoSansR;
-  font-weight: 900;
+  font-weight: 700;
 }
-
-.icon {
-  font-family: ionicons;
-  font-size: 24px;
-  text-transform: none;
-}
-
-.icon-large {
-  font-size: 32px;
-}
-
-.icon-white {
-  color: rgba(#fff, 0.875);
-}
-
-.ProductList {
-  align-items: center;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: center;
-  padding: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.ProductList-img {
-  width: 30%;
-}
-
-/* #ProductList .Grid-cell:nth-child(odd) .ProductList {
-  flex-direction: row-reverse;
-} */
-
-.ProductList-content {
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  width: 70%;
-}
-
-.ProductList-contentTitle {
-  text-transform: uppercase;
-}
-
-@import "./components-button.css";
-@import "suitcss-components-grid";
-@import "gravitons";
-@import "suitcss-utils-size";
-@import "mainheader.css";
-@import "hero.css";
 
 /*
  green500 = #4CAF50,
@@ -87,10 +46,40 @@ h6 {
  white: #fafafa
 */
 
-.u-textCenter {
-  text-align: center;
+.u-heightFull {
+  height: 100%;
 }
 
-.Product-list {
-  padding: 16px;
+.bg-blue {
+  background-color: blue;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.bg-grey {
+  background-color: grey;
+}
+
+article p {
+  margin-bottom: 1.3em;
+}
+
+.Card {
+  background-color: #fafff4;
+  margin: auto;
+  width: calc(100% - 16px);
+}
+
+.logo-sm {
+  width: 50%;
+}
+
+.forcePushY1 {
+  transform: translateY(-1.5rem);
 }

@@ -1,29 +1,34 @@
 extends partial/default.jade
 block content
-  section.Hero
-    .Hero-img.imgFill
-      img.imgFillSrc(src="assets/cocosugar.jpg", alt="")
-    .Hero-content
-      .div
-        h1 CocoGreenFarms
-        p Coco sugar derived from the coconut palm tree and is touted as being more nutritious and lower on the glycemic index than sugar.
-      .Hero-shortcut
-        a.Hero-shortcutLink(href="/")
-          .div
-            span.icon.icon-white.icon-large &#xf143;
-            p Why coconut sugar?
-          
-        a.Hero-shortcutLink(href="/product.html")
-          .div
-            span.icon.icon-white.icon-large &#xf2a8;
-            p Product
-          
-        a.Hero-shortcutLink(href="/")
-          .div
-            span.icon.icon-white.icon-large &#xf214;
-            p Exports
-        a.Hero-shortcutLink(href="/")
-          .div
-            span.icon.icon-white.icon-large &#xf3f8;
-            p Shop
+  .Grid
+    .Grid-cell
+      .FlexEmbed
+        .FlexEmbed-ratio
+        .FlexEmbed-content.bg-blue
+          p Why Should Organic coconut sugar
+    .Grid-cell.u-size1of2
+      .FlexEmbed
+        .FlexEmbed-ratio
+        .FlexEmbed-content.bg-red
+          p Our Product
+    .Grid-cell.u-size1of2
+      .FlexEmbed
+        .FlexEmbed-ratio
+        .FlexEmbed-content.bg-yellow
+          p Our Services
+    .Grid-cell
+      .FlexEmbed
+        .FlexEmbed-ratio.FlexEmbed-ratio--2by1
+        .FlexEmbed-content.bg-green
+          p Shop
+    .Grid-cell.u-size1of2
+      .FlexEmbed
+        .FlexEmbed-ratio
+        .FlexEmbed-content.bg-red
+          p Exports
+    .Grid-cell.u-size1of2
+      .FlexEmbed
+        .FlexEmbed-ratio
+        .FlexEmbed-content.bg-grey
+          p About Us
           

@@ -618,192 +618,78 @@ ul {
 [tabindex="-1"]:focus {
   outline: none !important;
 }
+/** @define FlexEmbed */
 
-html {
-  font-family: MuseoSans;
-}
+/**
+ * Flexible media embeds
+ *
+ * For use with media embeds – such as videos, slideshows, or even images –
+ * that need to retain a specific aspect ratio but adapt to the width of their
+ * containing element.
+ *
+ * Based on: http://alistapart.com/article/creating-intrinsic-ratios-for-video
+ */
 
-body {
-  color: rgba(68,68,68, 0.875);
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgba(78,46,40, 0.875);
-  font-family: MuseoSansR;
-  font-weight: 900;
-}
-
-.icon {
-  font-family: ionicons;
-  font-size: 24px;
-  text-transform: none;
-}
-
-.icon-large {
-  font-size: 32px;
-}
-
-.icon-white {
-  color: rgba(255,255,255, 0.875);
-}
-
-.ProductList {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #eee;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 16px;
+.FlexEmbed {
+  display: block;
+  overflow: hidden;
   position: relative;
+}
+
+/**
+ * The aspect-ratio hack is applied to an empty element because it allows
+ * the component to respect `max-height`. Default aspect ratio is 1:1.
+ */
+
+.FlexEmbed-ratio {
+  display: block;
+  padding-bottom: 100%;
   width: 100%;
 }
 
-.ProductList-img {
-  width: 30%;
+/**
+ * Modifier: 3:1 aspect ratio
+ */
+
+.FlexEmbed-ratio--3by1 {
+  padding-bottom: 33.33333%;
 }
 
-/* #ProductList .Grid-cell:nth-child(odd) .ProductList {
-  flex-direction: row-reverse;
-} */
+/**
+ * Modifier: 2:1 aspect ratio
+ */
 
-.ProductList-content {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+.FlexEmbed-ratio--2by1 {
+  padding-bottom: 50%;
+}
+
+/**
+ * Modifier: 16:9 aspect ratio
+ */
+
+.FlexEmbed-ratio--16by9 {
+  padding-bottom: 56.25%;
+}
+
+/**
+ * Modifier: 4:3 aspect ratio
+ */
+
+.FlexEmbed-ratio--4by3 {
+  padding-bottom: 75%;
+}
+
+/**
+ * Fit the content to the aspect ratio
+ */
+
+.FlexEmbed-content {
   bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 70%;
-}
-
-.ProductList-contentTitle {
-  text-transform: uppercase;
-}
-
-/** @define Button */
-
-/**
- * The button classes are best applied to links and buttons.
- * These components can be used in forms, as calls to action, or as part of the
- * general UI of the site/app.
- */
-
-/**
- * 1. Normalize `box-sizing` across all elements that this component could be
- *    applied to.
- * 2. Inherit text color from ancestor.
- * 3. Inherit font styles from ancestor.
- * 4. Prevent button text from being selectable.
- */
-
-.Button {
-  background: transparent;
-  border-color: currentcolor;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  cursor: pointer;
-  display: inline-block;
-  font: inherit; /* 3 */
-  margin: 0;
-  padding: 0.4em 0.75em;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; /* 4 */
-}
-
-/**
- * Remove excess padding and border in Firefox 4+
- */
-
-.Button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/**
- * Work around a Firefox/IE bug where the transparent `button` background
- * results in a loss of the default `button` focus styles.
- */
-
-.Button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-/**
- * UI states
- */
-
-.Button:hover,
-.Button:focus,
-.Button:active {
-  text-decoration: none;
-}
-
-.Button:disabled,
-.Button.is-disabled {
-  cursor: default;
-  opacity: 0.6;
-}
-
-.Button {
-  border-radius: 2px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1;
-  padding: 1rem 1.5rem;
-  text-transform: uppercase;
-}
-
-.Button--primary {
-  background-color: #4caf50;
-  border: transparent;
-  color: rgba(255,255,255, 0.875);
-  letter-spacing: 0.1em;
-}
-
-.Button-navToggle {
-  color: inherit;
-  font-family: ionicons;
-  font-size: 24px;
-}
-
-.Button--small {
-  font-size: 0.65rem;
-  padding: 0.5rem 0.75rem;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 /** @define Grid */
 
@@ -1246,120 +1132,386 @@ h6 {
  * @define utilities
  * Size: breakpoint 3 (large)
  */
+/** @define utilities */
 
-.MainHeader {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*background-color: var(--primaryColor);*/
-  background-color: transparent;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 48px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  left: 0;
-  padding: 0 16px;
-  position: absolute;
-  text-decoration: none;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+/* Applies to flex container
+   ========================================================================== */
+
+/**
+ * Container
+ */
+
+.u-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-.MainHeader > * {
-  text-decoration: none;
+.u-flexInline {
+  display: -webkit-inline-box !important;
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
 }
 
-.MainHeader-title {
-  color: rgba(255,255,255, 0.875);
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
+/**
+ * Direction: row
+ */
+
+.u-flexRow {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -webkit-flex-direction: row !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
 }
 
-.Button-navToggle {
-  color: rgba(255,255,255, 0.875);
-}
-.Hero {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #000;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  position: relative;
+.u-flexRowReverse {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+  -webkit-flex-direction: row-reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
 }
 
-.Hero-img {
-  bottom: 0;
-  left: 0;
-  min-height: 100vh;
-  opacity: 0.7;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
+/**
+ * Direction: column
+ */
+
+.u-flexCol {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -webkit-flex-direction: column !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
 }
 
-.Hero-content {
-  color: rgba(255,255,255, 0.975);
+.u-flexColReverse {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: reverse !important;
+  -webkit-flex-direction: column-reverse !important;
+      -ms-flex-direction: column-reverse !important;
+          flex-direction: column-reverse !important;
+}
+
+/**
+ * Wrap
+ */
+
+.u-flexWrap {
+  -webkit-flex-wrap: wrap !important;
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important;
+}
+
+.u-flexNoWrap {
+  -webkit-flex-wrap: nowrap !important;
+      -ms-flex-wrap: nowrap !important;
+          flex-wrap: nowrap !important;
+}
+
+.u-flexWrapReverse {
+  -webkit-flex-wrap: wrap-reverse !important;
+      -ms-flex-wrap: wrap-reverse !important;
+          flex-wrap: wrap-reverse !important;
+}
+
+/**
+ * Align items along the main axis of the current line of the flex container
+ */
+
+.u-flexJustifyStart {
+  -webkit-box-pack: start !important;
+  -webkit-justify-content: flex-start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+.u-flexJustifyEnd {
+  -webkit-box-pack: end !important;
+  -webkit-justify-content: flex-end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.u-flexJustifyCenter {
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.u-flexJustifyBetween {
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.u-flexJustifyAround {
+  -webkit-justify-content: space-around !important;
+      -ms-flex-pack: distribute !important;
+          justify-content: space-around !important;
+}
+
+/**
+ * Align items in the cross axis of the current line of the flex container
+ * Similar to `justify-content` but in the perpendicular direction
+ */
+
+.u-flexAlignItemsStart {
+  -webkit-box-align: start !important;
+  -webkit-align-items: flex-start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.u-flexAlignItemsEnd {
+  -webkit-box-align: end !important;
+  -webkit-align-items: flex-end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+
+.u-flexAlignItemsCenter {
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.u-flexAlignItemsStretch {
+  -webkit-box-align: stretch !important;
+  -webkit-align-items: stretch !important;
+      -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+}
+
+.u-flexAlignItemsBaseline {
+  -webkit-box-align: baseline !important;
+  -webkit-align-items: baseline !important;
+      -ms-flex-align: baseline !important;
+          align-items: baseline !important;
+}
+
+/**
+ * Aligns items within the flex container when there is extra space in the cross-axis
+ *
+ * Has no effect when there is only one line of flex items.
+ */
+
+.u-flexAlignContentStart {
+  -webkit-align-content: flex-start !important;
+      -ms-flex-line-pack: start !important;
+          align-content: flex-start !important;
+}
+
+.u-flexAlignContentEnd {
+  -webkit-align-content: flex-end !important;
+      -ms-flex-line-pack: end !important;
+          align-content: flex-end !important;
+}
+
+.u-flexAlignContentCenter {
+  -webkit-align-content: center !important;
+      -ms-flex-line-pack: center !important;
+          align-content: center !important;
+}
+
+.u-flexAlignContentStretch {
+  -webkit-align-content: stretch !important;
+      -ms-flex-line-pack: stretch !important;
+          align-content: stretch !important;
+}
+
+.u-flexAlignContentBetween {
+  -webkit-align-content: space-between !important;
+      -ms-flex-line-pack: justify !important;
+          align-content: space-between !important;
+}
+
+.u-flexAlignContentAround {
+  -webkit-align-content: space-around !important;
+      -ms-flex-line-pack: distribute !important;
+          align-content: space-around !important;
+}
+
+/**
+ * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
+ */
+
+/* postcss-bem-linter: ignore */
+
+.u-flex > *,
+.u-flexInline > * {
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1; /* 1 */
+}
+
+/* Applies to flex items
+   ========================================================================== */
+
+/**
+ * Override default alignment of single item when specified by `align-items`
+ */
+
+.u-flexAlignSelfStart {
+  -webkit-align-self: flex-start !important;
+      -ms-flex-item-align: start !important;
+          align-self: flex-start !important;
+}
+
+.u-flexAlignSelfEnd {
+  -webkit-align-self: flex-end !important;
+      -ms-flex-item-align: end !important;
+          align-self: flex-end !important;
+}
+
+.u-flexAlignSelfCenter {
+  -webkit-align-self: center !important;
+      -ms-flex-item-align: center !important;
+          align-self: center !important;
+}
+
+.u-flexAlignSelfStretch {
+  -webkit-align-self: stretch !important;
+      -ms-flex-item-align: stretch !important;
+          align-self: stretch !important;
+}
+
+.u-flexAlignSelfBaseline {
+  -webkit-align-self: baseline !important;
+      -ms-flex-item-align: baseline !important;
+          align-self: baseline !important;
+}
+
+.u-flexAlignSelfAuto {
+  -webkit-align-self: auto !important;
+      -ms-flex-item-align: auto !important;
+          align-self: auto !important;
+}
+
+/**
+ * Change order without editing underlying HTML
+ */
+
+.u-flexOrderFirst {
+  -webkit-box-ordinal-group: 0 !important;
+  -webkit-order: -1 !important;
+      -ms-flex-order: -1 !important;
+          order: -1 !important;
+}
+
+.u-flexOrderLast {
+  -webkit-box-ordinal-group: 2 !important;
+  -webkit-order: 1 !important;
+      -ms-flex-order: 1 !important;
+          order: 1 !important;
+}
+
+.u-flexOrderNone {
+  -webkit-box-ordinal-group: 1 !important;
+  -webkit-order: 0 !important;
+      -ms-flex-order: 0 !important;
+          order: 0 !important;
+}
+
+/**
+ * Specify the flex grow factor, which determines how much the flex item will
+ * grow relative to the rest of the flex items in the flex container.
+ *
+ * Supports 1-5 proportions
+ *
+ * 1. Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7
+ *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
+ */
+
+.u-flexGrow1 {
+  -webkit-box-flex: 1 !important;
+  -webkit-flex: 1 1 0% !important;
+      -ms-flex: 1 1 0% !important;
+          flex: 1 1 0% !important; /* 1 */
+}
+
+.u-flexGrow2 {
+  -webkit-box-flex: 2 !important;
+  -webkit-flex: 2 1 0% !important;
+      -ms-flex: 2 1 0% !important;
+          flex: 2 1 0% !important;
+}
+
+.u-flexGrow3 {
+  -webkit-box-flex: 3 !important;
+  -webkit-flex: 3 1 0% !important;
+      -ms-flex: 3 1 0% !important;
+          flex: 3 1 0% !important;
+}
+
+.u-flexGrow4 {
+  -webkit-box-flex: 4 !important;
+  -webkit-flex: 4 1 0% !important;
+      -ms-flex: 4 1 0% !important;
+          flex: 4 1 0% !important;
+}
+
+.u-flexGrow5 {
+  -webkit-box-flex: 5 !important;
+  -webkit-flex: 5 1 0% !important;
+      -ms-flex: 5 1 0% !important;
+          flex: 5 1 0% !important;
+}
+
+/**
+ * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
+ */
+
+.u-flexExpandLeft {
+  margin-left: auto !important;
+}
+
+.u-flexExpandRight {
+  margin-right: auto !important;
+}
+/**
+ * @define utilities
+ * Size: breakpoint 1 (small)
+ */
+/**
+ * @define utilities
+ * Size: breakpoint 1 (medium)
+ */
+/**
+ * @define utilities
+ * Size: breakpoint 1 (large)
+ */
+
+html {
+  background-color: #fafff4;
+  font-family: MuseoSans;
+}
+
+body {
+  color: rgba(33,57,46, 0.875);
+  font-size: 0.875rem;
   line-height: 1.3;
-  padding: 1rem;
-  text-align: center;
-  width: 100%;
-  z-index: 2;
 }
 
-.Hero-shortcut {
-  bottom: 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  left: 50%;
-  margin-top: 24px;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 300px;
+img {
+  height: auto;
+  max-width: 100%;
 }
 
-.Hero-shortcutLink {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgba(255,255,255,0.875);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-size: 8px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  line-height: 1.5;
-  padding: 8px;
-  text-decoration: none;
-  text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(78,46,40, 0.875);
+  font-family: MuseoSansR;
+  font-weight: 700;
 }
 
 /*
@@ -1371,10 +1523,1430 @@ h6 {
  white: #fafafa
 */
 
-.u-textCenter {
-  text-align: center;
+.u-heightFull {
+  height: 100%;
 }
 
-.Product-list {
-  padding: 16px;
+.bg-blue {
+  background-color: blue;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.bg-grey {
+  background-color: grey;
+}
+
+article p {
+  margin-bottom: 1.3em;
+}
+
+.Card {
+  background-color: #fafff4;
+  margin: auto;
+  width: calc(100% - 16px);
+}
+
+.logo-sm {
+  width: 50%;
+}
+
+.forcePushY1 {
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
+@media (min-width:320px) and (max-width:640px) {
+
+  /* Proportional widths: breakpoint 1 (small)
+     ========================================================================== */
+
+  /**
+   * Specify the proportional width of an object.
+   * Intentional redundancy build into each set of unit classes.
+   * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+   *
+   * 1. Use `flex-basis: auto` with a width to avoid box-sizing bug in IE10/11
+   *    http://git.io/vllMD
+   */
+
+  /* postcss-bem-linter: ignore */
+  [class*="u-sm-size"] {
+    -webkit-flex-basis: auto !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+
+    /* 1 */
+  }
+  .u-sm-size1of12 {
+    width: 8.33333% !important;
+  }
+  .u-sm-size1of10 {
+    width: 10% !important;
+  }
+  .u-sm-size1of8 {
+    width: 12.5% !important;
+  }
+  .u-sm-size1of6,
+  .u-sm-size2of12 {
+    width: 16.66667% !important;
+  }
+  .u-sm-size1of5,
+  .u-sm-size2of10 {
+    width: 20% !important;
+  }
+  .u-sm-size1of4,
+  .u-sm-size2of8,
+  .u-sm-size3of12 {
+    width: 25% !important;
+  }
+  .u-sm-size3of10 {
+    width: 30% !important;
+  }
+  .u-sm-size1of3,
+  .u-sm-size2of6,
+  .u-sm-size4of12 {
+    width: 33.33333% !important;
+  }
+  .u-sm-size3of8 {
+    width: 37.5% !important;
+  }
+  .u-sm-size2of5,
+  .u-sm-size4of10 {
+    width: 40% !important;
+  }
+  .u-sm-size5of12 {
+    width: 41.66667% !important;
+  }
+  .u-sm-size1of2,
+  .u-sm-size2of4,
+  .u-sm-size3of6,
+  .u-sm-size4of8,
+  .u-sm-size5of10,
+  .u-sm-size6of12 {
+    width: 50% !important;
+  }
+  .u-sm-size7of12 {
+    width: 58.33333% !important;
+  }
+  .u-sm-size3of5,
+  .u-sm-size6of10 {
+    width: 60% !important;
+  }
+  .u-sm-size5of8 {
+    width: 62.5% !important;
+  }
+  .u-sm-size2of3,
+  .u-sm-size4of6,
+  .u-sm-size8of12 {
+    width: 66.66667% !important;
+  }
+  .u-sm-size7of10 {
+    width: 70% !important;
+  }
+  .u-sm-size3of4,
+  .u-sm-size6of8,
+  .u-sm-size9of12 {
+    width: 75% !important;
+  }
+  .u-sm-size4of5,
+  .u-sm-size8of10 {
+    width: 80% !important;
+  }
+  .u-sm-size5of6,
+  .u-sm-size10of12 {
+    width: 83.33333% !important;
+  }
+  .u-sm-size7of8 {
+    width: 87.5% !important;
+  }
+  .u-sm-size9of10 {
+    width: 90% !important;
+  }
+  .u-sm-size11of12 {
+    width: 91.66667% !important;
+  }
+
+  /* Intrinsic widths
+     ========================================================================== */
+
+  /**
+   * Make an element fill the remaining space.
+   *
+   * 1. Be explicit to work around IE10 bug with shorthand flex - http://git.io/vllC7
+   * 2. IE10 ignores previous `flex-basis` value. Setting again here fixes - http://git.io/vllMt
+   */
+  .u-sm-sizeFill {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 0% !important;
+    -ms-flex: 1 1 0% !important;
+    flex: 1 1 0% !important;
+
+    /* 1 */
+    -webkit-flex-basis: 0% !important;
+    -ms-flex-preferred-size: 0% !important;
+    flex-basis: 0% !important;
+
+    /* 2 */
+  }
+
+  /**
+   * An alternative method to make an element fill the remaining space.
+   * Distributes space based on the initial width and height of the element
+   *
+   * http://www.w3.org/TR/css-flexbox/images/rel-vs-abs-flex.svg
+   */
+  .u-sm-sizeFillAlt {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 auto !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    -webkit-flex-basis: auto !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+  }
+
+  /**
+   * Make an element the width of its parent.
+   */
+  .u-sm-sizeFull {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Applies to flex container
+     ========================================================================== */
+
+  /**
+   * Container
+   */
+  .u-sm-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .u-sm-flexInline {
+    display: -webkit-inline-box !important;
+    display: -webkit-inline-flex !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+
+  /**
+   * Direction: row
+   */
+  .u-sm-flexRow {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  .u-sm-flexRowReverse {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: row-reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+
+  /**
+   * Direction: column
+   */
+  .u-sm-flexCol {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  .u-sm-flexColReverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: column-reverse !important;
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+
+  /**
+   * Wrap
+   */
+  .u-sm-flexWrap {
+    -webkit-flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  .u-sm-flexNoWrap {
+    -webkit-flex-wrap: nowrap !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  .u-sm-flexWrapReverse {
+    -webkit-flex-wrap: wrap-reverse !important;
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+
+  /**
+   * Align items along the main axis of the current line of the flex container
+   */
+  .u-sm-flexJustifyStart {
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  .u-sm-flexJustifyEnd {
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  .u-sm-flexJustifyCenter {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .u-sm-flexJustifyBetween {
+    -webkit-box-pack: justify !important;
+    -webkit-justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  .u-sm-flexJustifyAround {
+    -webkit-justify-content: space-around !important;
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+
+  /**
+   * Align items in the cross axis of the current line of the flex container
+   * Similar to `justify-content` but in the perpendicular direction
+   */
+  .u-sm-flexAlignItemsStart {
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  .u-sm-flexAlignItemsEnd {
+    -webkit-box-align: end !important;
+    -webkit-align-items: flex-end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  .u-sm-flexAlignItemsCenter {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .u-sm-flexAlignItemsStretch {
+    -webkit-box-align: stretch !important;
+    -webkit-align-items: stretch !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+  .u-sm-flexAlignItemsBaseline {
+    -webkit-box-align: baseline !important;
+    -webkit-align-items: baseline !important;
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  /**
+   * Aligns items within the flex container when there is extra space in the cross-axis
+   *
+   * Has no effect when there is only one line of flex items.
+   */
+  .u-sm-flexAlignContentStart {
+    -webkit-align-content: flex-start !important;
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  .u-sm-flexAlignContentEnd {
+    -webkit-align-content: flex-end !important;
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  .u-sm-flexAlignContentCenter {
+    -webkit-align-content: center !important;
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  .u-sm-flexAlignContentStretch {
+    -webkit-align-content: stretch !important;
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+  .u-sm-flexAlignContentBetween {
+    -webkit-align-content: space-between !important;
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  .u-sm-flexAlignContentAround {
+    -webkit-align-content: space-around !important;
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+
+  /**
+   * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
+   */
+
+  /* postcss-bem-linter: ignore */
+  .u-sm-flex > *,
+  .u-sm-flexInline > * {
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+
+    /* 1 */
+  }
+
+  /* Applies to flex items
+     ========================================================================== */
+
+  /**
+   * Override default alignment of single item when specified by `align-items`
+   */
+  .u-sm-flexAlignSelfStart {
+    -webkit-align-self: flex-start !important;
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  .u-sm-flexAlignSelfEnd {
+    -webkit-align-self: flex-end !important;
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  .u-sm-flexAlignSelfCenter {
+    -webkit-align-self: center !important;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  .u-sm-flexAlignSelfStretch {
+    -webkit-align-self: stretch !important;
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+  .u-sm-flexAlignSelfBaseline {
+    -webkit-align-self: baseline !important;
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  .u-sm-flexAlignSelfAuto {
+    -webkit-align-self: auto !important;
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+
+  /**
+   * Change order without editing underlying HTML
+   */
+  .u-sm-flexOrderFirst {
+    -webkit-box-ordinal-group: 0 !important;
+    -webkit-order: -1 !important;
+    -ms-flex-order: -1 !important;
+    order: -1 !important;
+  }
+  .u-sm-flexOrderLast {
+    -webkit-box-ordinal-group: 2 !important;
+    -webkit-order: 1 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+  }
+  .u-sm-flexOrderNone {
+    -webkit-box-ordinal-group: 1 !important;
+    -webkit-order: 0 !important;
+    -ms-flex-order: 0 !important;
+    order: 0 !important;
+  }
+
+  /**
+   * Specify the flex grow factor, which determines how much the flex item will
+   * grow relative to the rest of the flex items in the flex container.
+   *
+   * Supports 1-5 proportions
+   *
+   * 1. Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7
+   *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
+   */
+  .u-sm-flexGrow1 {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 0% !important;
+    -ms-flex: 1 1 0% !important;
+    flex: 1 1 0% !important;
+
+    /* 1 */
+  }
+  .u-sm-flexGrow2 {
+    -webkit-box-flex: 2 !important;
+    -webkit-flex: 2 1 0% !important;
+    -ms-flex: 2 1 0% !important;
+    flex: 2 1 0% !important;
+  }
+  .u-sm-flexGrow3 {
+    -webkit-box-flex: 3 !important;
+    -webkit-flex: 3 1 0% !important;
+    -ms-flex: 3 1 0% !important;
+    flex: 3 1 0% !important;
+  }
+  .u-sm-flexGrow4 {
+    -webkit-box-flex: 4 !important;
+    -webkit-flex: 4 1 0% !important;
+    -ms-flex: 4 1 0% !important;
+    flex: 4 1 0% !important;
+  }
+  .u-sm-flexGrow5 {
+    -webkit-box-flex: 5 !important;
+    -webkit-flex: 5 1 0% !important;
+    -ms-flex: 5 1 0% !important;
+    flex: 5 1 0% !important;
+  }
+
+  /**
+   * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
+   */
+  .u-sm-flexExpandLeft {
+    margin-left: auto !important;
+  }
+  .u-sm-flexExpandRight {
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:640px) and (max-width:960px) {
+
+  /* Proportional widths: breakpoint 2 (medium)
+     ========================================================================== */
+
+  /**
+   * Specify the proportional width of an object.
+   * Intentional redundancy build into each set of unit classes.
+   * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+   *
+   * 1. Use `flex-basis: auto` with a width to avoid box-sizing bug in IE10/11
+   *    http://git.io/vllMD
+   */
+
+  /* postcss-bem-linter: ignore */
+  [class*="u-md-size"] {
+    -webkit-flex-basis: auto !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+
+    /* 1 */
+  }
+  .u-md-size1of12 {
+    width: 8.33333% !important;
+  }
+  .u-md-size1of10 {
+    width: 10% !important;
+  }
+  .u-md-size1of8 {
+    width: 12.5% !important;
+  }
+  .u-md-size1of6,
+  .u-md-size2of12 {
+    width: 16.66667% !important;
+  }
+  .u-md-size1of5,
+  .u-md-size2of10 {
+    width: 20% !important;
+  }
+  .u-md-size1of4,
+  .u-md-size2of8,
+  .u-md-size3of12 {
+    width: 25% !important;
+  }
+  .u-md-size3of10 {
+    width: 30% !important;
+  }
+  .u-md-size1of3,
+  .u-md-size2of6,
+  .u-md-size4of12 {
+    width: 33.33333% !important;
+  }
+  .u-md-size3of8 {
+    width: 37.5% !important;
+  }
+  .u-md-size2of5,
+  .u-md-size4of10 {
+    width: 40% !important;
+  }
+  .u-md-size5of12 {
+    width: 41.66667% !important;
+  }
+  .u-md-size1of2,
+  .u-md-size2of4,
+  .u-md-size3of6,
+  .u-md-size4of8,
+  .u-md-size5of10,
+  .u-md-size6of12 {
+    width: 50% !important;
+  }
+  .u-md-size7of12 {
+    width: 58.33333% !important;
+  }
+  .u-md-size3of5,
+  .u-md-size6of10 {
+    width: 60% !important;
+  }
+  .u-md-size5of8 {
+    width: 62.5% !important;
+  }
+  .u-md-size2of3,
+  .u-md-size4of6,
+  .u-md-size8of12 {
+    width: 66.66667% !important;
+  }
+  .u-md-size7of10 {
+    width: 70% !important;
+  }
+  .u-md-size3of4,
+  .u-md-size6of8,
+  .u-md-size9of12 {
+    width: 75% !important;
+  }
+  .u-md-size4of5,
+  .u-md-size8of10 {
+    width: 80% !important;
+  }
+  .u-md-size5of6,
+  .u-md-size10of12 {
+    width: 83.33333% !important;
+  }
+  .u-md-size7of8 {
+    width: 87.5% !important;
+  }
+  .u-md-size9of10 {
+    width: 90% !important;
+  }
+  .u-md-size11of12 {
+    width: 91.66667% !important;
+  }
+
+  /* Intrinsic widths
+     ========================================================================== */
+
+  /**
+   * Make an element fill the remaining space.
+   *
+   * 1. Be explicit to work around IE10 bug with shorthand flex - http://git.io/vllC7
+   * 2. IE10 ignores previous `flex-basis` value. Setting again here fixes - http://git.io/vllMt
+   */
+  .u-md-sizeFill {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 0% !important;
+    -ms-flex: 1 1 0% !important;
+    flex: 1 1 0% !important;
+
+    /* 1 */
+    -webkit-flex-basis: 0% !important;
+    -ms-flex-preferred-size: 0% !important;
+    flex-basis: 0% !important;
+
+    /* 2 */
+  }
+
+  /**
+   * An alternative method to make an element fill the remaining space.
+   * Distributes space based on the initial width and height of the element
+   *
+   * http://www.w3.org/TR/css-flexbox/images/rel-vs-abs-flex.svg
+   */
+  .u-md-sizeFillAlt {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 auto !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    -webkit-flex-basis: auto !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+  }
+
+  /**
+   * Make an element the width of its parent.
+   */
+  .u-md-sizeFull {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Applies to flex container
+     ========================================================================== */
+
+  /**
+   * Container
+   */
+  .u-md-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .u-md-flexInline {
+    display: -webkit-inline-box !important;
+    display: -webkit-inline-flex !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+
+  /**
+   * Direction: row
+   */
+  .u-md-flexRow {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  .u-md-flexRowReverse {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: row-reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+
+  /**
+   * Direction: column
+   */
+  .u-md-flexCol {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  .u-md-flexColReverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: column-reverse !important;
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+
+  /**
+   * Wrap
+   */
+  .u-md-flexWrap {
+    -webkit-flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  .u-md-flexNoWrap {
+    -webkit-flex-wrap: nowrap !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  .u-md-flexWrapReverse {
+    -webkit-flex-wrap: wrap-reverse !important;
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+
+  /**
+   * Align items along the main axis of the current line of the flex container
+   */
+  .u-md-flexJustifyStart {
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  .u-md-flexJustifyEnd {
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  .u-md-flexJustifyCenter {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .u-md-flexJustifyBetween {
+    -webkit-box-pack: justify !important;
+    -webkit-justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  .u-md-flexJustifyAround {
+    -webkit-justify-content: space-around !important;
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+
+  /**
+   * Align items in the cross axis of the current line of the flex container
+   * Similar to `justify-content` but in the perpendicular direction
+   */
+  .u-md-flexAlignItemsStart {
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  .u-md-flexAlignItemsEnd {
+    -webkit-box-align: end !important;
+    -webkit-align-items: flex-end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  .u-md-flexAlignItemsCenter {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .u-md-flexAlignItemsStretch {
+    -webkit-box-align: stretch !important;
+    -webkit-align-items: stretch !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+  .u-md-flexAlignItemsBaseline {
+    -webkit-box-align: baseline !important;
+    -webkit-align-items: baseline !important;
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  /**
+   * Aligns items within the flex container when there is extra space in the cross-axis
+   *
+   * Has no effect when there is only one line of flex items.
+   */
+  .u-md-flexAlignContentStart {
+    -webkit-align-content: flex-start !important;
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  .u-md-flexAlignContentEnd {
+    -webkit-align-content: flex-end !important;
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  .u-md-flexAlignContentCenter {
+    -webkit-align-content: center !important;
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  .u-md-flexAlignContentStretch {
+    -webkit-align-content: stretch !important;
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+  .u-md-flexAlignContentBetween {
+    -webkit-align-content: space-between !important;
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  .u-md-flexAlignContentAround {
+    -webkit-align-content: space-around !important;
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+
+  /**
+   * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
+   */
+
+  /* postcss-bem-linter: ignore */
+  .u-md-flex > *,
+  .u-md-flexInline > * {
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+
+    /* 1 */
+  }
+
+  /* Applies to flex items
+     ========================================================================== */
+
+  /**
+   * Override default alignment of single item when specified by `align-items`
+   */
+  .u-md-flexAlignSelfStart {
+    -webkit-align-self: flex-start !important;
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  .u-md-flexAlignSelfEnd {
+    -webkit-align-self: flex-end !important;
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  .u-md-flexAlignSelfCenter {
+    -webkit-align-self: center !important;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  .u-md-flexAlignSelfStretch {
+    -webkit-align-self: stretch !important;
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+  .u-md-flexAlignSelfBaseline {
+    -webkit-align-self: baseline !important;
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  .u-md-flexAlignSelfAuto {
+    -webkit-align-self: auto !important;
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+
+  /**
+   * Change order without editing underlying HTML
+   */
+  .u-md-flexOrderFirst {
+    -webkit-box-ordinal-group: 0 !important;
+    -webkit-order: -1 !important;
+    -ms-flex-order: -1 !important;
+    order: -1 !important;
+  }
+  .u-md-flexOrderLast {
+    -webkit-box-ordinal-group: 2 !important;
+    -webkit-order: 1 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+  }
+  .u-md-flexOrderNone {
+    -webkit-box-ordinal-group: 1 !important;
+    -webkit-order: 0 !important;
+    -ms-flex-order: 0 !important;
+    order: 0 !important;
+  }
+
+  /**
+   * Specify the flex grow factor, which determines how much the flex item will
+   * grow relative to the rest of the flex items in the flex container.
+   *
+   * Supports 1-5 proportions
+   *
+   * 1. Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7
+   *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
+   */
+  .u-md-flexGrow1 {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 0% !important;
+    -ms-flex: 1 1 0% !important;
+    flex: 1 1 0% !important;
+
+    /* 1 */
+  }
+  .u-md-flexGrow2 {
+    -webkit-box-flex: 2 !important;
+    -webkit-flex: 2 1 0% !important;
+    -ms-flex: 2 1 0% !important;
+    flex: 2 1 0% !important;
+  }
+  .u-md-flexGrow3 {
+    -webkit-box-flex: 3 !important;
+    -webkit-flex: 3 1 0% !important;
+    -ms-flex: 3 1 0% !important;
+    flex: 3 1 0% !important;
+  }
+  .u-md-flexGrow4 {
+    -webkit-box-flex: 4 !important;
+    -webkit-flex: 4 1 0% !important;
+    -ms-flex: 4 1 0% !important;
+    flex: 4 1 0% !important;
+  }
+  .u-md-flexGrow5 {
+    -webkit-box-flex: 5 !important;
+    -webkit-flex: 5 1 0% !important;
+    -ms-flex: 5 1 0% !important;
+    flex: 5 1 0% !important;
+  }
+
+  /**
+   * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
+   */
+  .u-md-flexExpandLeft {
+    margin-left: auto !important;
+  }
+  .u-md-flexExpandRight {
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:960px) {
+
+  /* Proportional widths: breakpoint 3 (large)
+     ========================================================================== */
+
+  /**
+   * Specify the proportional width of an object.
+   * Intentional redundancy build into each set of unit classes.
+   * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+   *
+   * 1. Use `flex-basis: auto` with a width to avoid box-sizing bug in IE10/11
+   *    http://git.io/vllMD
+   */
+
+  /* postcss-bem-linter: ignore */
+  [class*="u-lg-size"] {
+    -webkit-flex-basis: auto !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+
+    /* 1 */
+  }
+  .u-lg-size1of12 {
+    width: 8.33333% !important;
+  }
+  .u-lg-size1of10 {
+    width: 10% !important;
+  }
+  .u-lg-size1of8 {
+    width: 12.5% !important;
+  }
+  .u-lg-size1of6,
+  .u-lg-size2of12 {
+    width: 16.66667% !important;
+  }
+  .u-lg-size1of5,
+  .u-lg-size2of10 {
+    width: 20% !important;
+  }
+  .u-lg-size1of4,
+  .u-lg-size2of8,
+  .u-lg-size3of12 {
+    width: 25% !important;
+  }
+  .u-lg-size3of10 {
+    width: 30% !important;
+  }
+  .u-lg-size1of3,
+  .u-lg-size2of6,
+  .u-lg-size4of12 {
+    width: 33.33333% !important;
+  }
+  .u-lg-size3of8 {
+    width: 37.5% !important;
+  }
+  .u-lg-size2of5,
+  .u-lg-size4of10 {
+    width: 40% !important;
+  }
+  .u-lg-size5of12 {
+    width: 41.66667% !important;
+  }
+  .u-lg-size1of2,
+  .u-lg-size2of4,
+  .u-lg-size3of6,
+  .u-lg-size4of8,
+  .u-lg-size5of10,
+  .u-lg-size6of12 {
+    width: 50% !important;
+  }
+  .u-lg-size7of12 {
+    width: 58.33333% !important;
+  }
+  .u-lg-size3of5,
+  .u-lg-size6of10 {
+    width: 60% !important;
+  }
+  .u-lg-size5of8 {
+    width: 62.5% !important;
+  }
+  .u-lg-size2of3,
+  .u-lg-size4of6,
+  .u-lg-size8of12 {
+    width: 66.66667% !important;
+  }
+  .u-lg-size7of10 {
+    width: 70% !important;
+  }
+  .u-lg-size3of4,
+  .u-lg-size6of8,
+  .u-lg-size9of12 {
+    width: 75% !important;
+  }
+  .u-lg-size4of5,
+  .u-lg-size8of10 {
+    width: 80% !important;
+  }
+  .u-lg-size5of6,
+  .u-lg-size10of12 {
+    width: 83.33333% !important;
+  }
+  .u-lg-size7of8 {
+    width: 87.5% !important;
+  }
+  .u-lg-size9of10 {
+    width: 90% !important;
+  }
+  .u-lg-size11of12 {
+    width: 91.66667% !important;
+  }
+
+  /* Intrinsic widths
+     ========================================================================== */
+
+  /**
+   * Make an element fill the remaining space.
+   *
+   * 1. Be explicit to work around IE10 bug with shorthand flex - http://git.io/vllC7
+   * 2. IE10 ignores previous `flex-basis` value. Setting again here fixes - http://git.io/vllMt
+   */
+  .u-lg-sizeFill {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 0% !important;
+    -ms-flex: 1 1 0% !important;
+    flex: 1 1 0% !important;
+
+    /* 1 */
+    -webkit-flex-basis: 0% !important;
+    -ms-flex-preferred-size: 0% !important;
+    flex-basis: 0% !important;
+
+    /* 2 */
+  }
+
+  /**
+   * An alternative method to make an element fill the remaining space.
+   * Distributes space based on the initial width and height of the element
+   *
+   * http://www.w3.org/TR/css-flexbox/images/rel-vs-abs-flex.svg
+   */
+  .u-lg-sizeFillAlt {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 auto !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    -webkit-flex-basis: auto !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+  }
+
+  /**
+   * Make an element the width of its parent.
+   */
+  .u-lg-sizeFull {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Applies to flex container
+     ========================================================================== */
+
+  /**
+   * Container
+   */
+  .u-lg-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .u-lg-flexInline {
+    display: -webkit-inline-box !important;
+    display: -webkit-inline-flex !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+
+  /**
+   * Direction: row
+   */
+  .u-lg-flexRow {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  .u-lg-flexRowReverse {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: row-reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+
+  /**
+   * Direction: column
+   */
+  .u-lg-flexCol {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  .u-lg-flexColReverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: column-reverse !important;
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+
+  /**
+   * Wrap
+   */
+  .u-lg-flexWrap {
+    -webkit-flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  .u-lg-flexNoWrap {
+    -webkit-flex-wrap: nowrap !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  .u-lg-flexWrapReverse {
+    -webkit-flex-wrap: wrap-reverse !important;
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+
+  /**
+   * Align items along the main axis of the current line of the flex container
+   */
+  .u-lg-flexJustifyStart {
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  .u-lg-flexJustifyEnd {
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  .u-lg-flexJustifyCenter {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .u-lg-flexJustifyBetween {
+    -webkit-box-pack: justify !important;
+    -webkit-justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  .u-lg-flexJustifyAround {
+    -webkit-justify-content: space-around !important;
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+
+  /**
+   * Align items in the cross axis of the current line of the flex container
+   * Similar to `justify-content` but in the perpendicular direction
+   */
+  .u-lg-flexAlignItemsStart {
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  .u-lg-flexAlignItemsEnd {
+    -webkit-box-align: end !important;
+    -webkit-align-items: flex-end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  .u-lg-flexAlignItemsCenter {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .u-lg-flexAlignItemsStretch {
+    -webkit-box-align: stretch !important;
+    -webkit-align-items: stretch !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+  .u-lg-flexAlignItemsBaseline {
+    -webkit-box-align: baseline !important;
+    -webkit-align-items: baseline !important;
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  /**
+   * Aligns items within the flex container when there is extra space in the cross-axis
+   *
+   * Has no effect when there is only one line of flex items.
+   */
+  .u-lg-flexAlignContentStart {
+    -webkit-align-content: flex-start !important;
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  .u-lg-flexAlignContentEnd {
+    -webkit-align-content: flex-end !important;
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  .u-lg-flexAlignContentCenter {
+    -webkit-align-content: center !important;
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  .u-lg-flexAlignContentStretch {
+    -webkit-align-content: stretch !important;
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+  .u-lg-flexAlignContentBetween {
+    -webkit-align-content: space-between !important;
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  .u-lg-flexAlignContentAround {
+    -webkit-align-content: space-around !important;
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+
+  /**
+   * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
+   */
+
+  /* postcss-bem-linter: ignore */
+  .u-lg-flex > *,
+  .u-lg-flexInline > * {
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+
+    /* 1 */
+  }
+
+  /* Applies to flex items
+     ========================================================================== */
+
+  /**
+   * Override default alignment of single item when specified by `align-items`
+   */
+  .u-lg-flexAlignSelfStart {
+    -webkit-align-self: flex-start !important;
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  .u-lg-flexAlignSelfEnd {
+    -webkit-align-self: flex-end !important;
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  .u-lg-flexAlignSelfCenter {
+    -webkit-align-self: center !important;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  .u-lg-flexAlignSelfStretch {
+    -webkit-align-self: stretch !important;
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+  .u-lg-flexAlignSelfBaseline {
+    -webkit-align-self: baseline !important;
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  .u-lg-flexAlignSelfAuto {
+    -webkit-align-self: auto !important;
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+
+  /**
+   * Change order without editing underlying HTML
+   */
+  .u-lg-flexOrderFirst {
+    -webkit-box-ordinal-group: 0 !important;
+    -webkit-order: -1 !important;
+    -ms-flex-order: -1 !important;
+    order: -1 !important;
+  }
+  .u-lg-flexOrderLast {
+    -webkit-box-ordinal-group: 2 !important;
+    -webkit-order: 1 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+  }
+  .u-lg-flexOrderNone {
+    -webkit-box-ordinal-group: 1 !important;
+    -webkit-order: 0 !important;
+    -ms-flex-order: 0 !important;
+    order: 0 !important;
+  }
+
+  /**
+   * Specify the flex grow factor, which determines how much the flex item will
+   * grow relative to the rest of the flex items in the flex container.
+   *
+   * Supports 1-5 proportions
+   *
+   * 1. Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7
+   *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
+   */
+  .u-lg-flexGrow1 {
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 1 0% !important;
+    -ms-flex: 1 1 0% !important;
+    flex: 1 1 0% !important;
+
+    /* 1 */
+  }
+  .u-lg-flexGrow2 {
+    -webkit-box-flex: 2 !important;
+    -webkit-flex: 2 1 0% !important;
+    -ms-flex: 2 1 0% !important;
+    flex: 2 1 0% !important;
+  }
+  .u-lg-flexGrow3 {
+    -webkit-box-flex: 3 !important;
+    -webkit-flex: 3 1 0% !important;
+    -ms-flex: 3 1 0% !important;
+    flex: 3 1 0% !important;
+  }
+  .u-lg-flexGrow4 {
+    -webkit-box-flex: 4 !important;
+    -webkit-flex: 4 1 0% !important;
+    -ms-flex: 4 1 0% !important;
+    flex: 4 1 0% !important;
+  }
+  .u-lg-flexGrow5 {
+    -webkit-box-flex: 5 !important;
+    -webkit-flex: 5 1 0% !important;
+    -ms-flex: 5 1 0% !important;
+    flex: 5 1 0% !important;
+  }
+
+  /**
+   * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
+   */
+  .u-lg-flexExpandLeft {
+    margin-left: auto !important;
+  }
+  .u-lg-flexExpandRight {
+    margin-right: auto !important;
+  }
 }

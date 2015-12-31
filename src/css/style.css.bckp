@@ -1,0 +1,96 @@
+@import "./fonts.css";
+@import "suitcss-base";
+
+html {
+  font-family: MuseoSans;
+}
+
+body {
+  color: rgba(#444, 0.875);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(#4e2e28, 0.875);
+  font-family: MuseoSansR;
+  font-weight: 900;
+}
+
+.icon {
+  font-family: ionicons;
+  font-size: 24px;
+  text-transform: none;
+}
+
+.icon-large {
+  font-size: 32px;
+}
+
+.icon-white {
+  color: rgba(#fff, 0.875);
+}
+
+.ProductList {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.ProductList-img {
+  width: 30%;
+}
+
+/* #ProductList .Grid-cell:nth-child(odd) .ProductList {
+  flex-direction: row-reverse;
+} */
+
+.ProductList-content {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.ProductList-contentTitle {
+  text-transform: uppercase;
+}
+
+@import "./components-button.css";
+@import "suitcss-components-grid";
+@import "gravitons";
+@import "suitcss-utils-size";
+@import "mainheader.css";
+@import "hero.css";
+
+/*
+ green500 = #4CAF50,
+ brownChoco = #4E2E28
+ yellow=#FFEB3B
+ grey: #EEEEEE
+ black=#222
+ white: #fafafa
+*/
+
+.u-textCenter {
+  text-align: center;
+}
+
+.Product-list {
+  padding: 16px;
+}
