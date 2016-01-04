@@ -1,0 +1,82 @@
+  #ProductList {
+  padding-top: 56px;
+}
+
+.ProductThumb {
+  border-bottom: 1px solid var(--boder-color);
+  display: table;
+  padding: 1.3rem;
+  width: 100%;
+}
+
+.ProductThumb-img {
+  display: table-cell;
+  max-height: 88px;
+  padding-right: 1.3rem;
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.ProductThumb-img > img {
+  max-height: 80px;
+}
+
+.ProductThumb-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 70%;
+}
+
+.ProductThumb-title {
+  margin-bottom: 0.65rem;
+}
+
+.ProductThumb-action {
+  margin-bottom: 0.65rem;
+  margin-top: 0.65rem;
+}
+
+@media (--md-viewport) {
+  .ProductThumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .ProductThumb {
+    padding: 3rem;
+  }
+
+  /* Hacky Class for set default bg on product thumb */
+  #ProductList .Grid-cell:nth-child(2n+1) .ProductThumb {
+    background-color: var(--secondary-color);
+  }
+
+  #ProductList .Grid-cell:nth-child(2n+2) .ProductThumb {
+    background-color: var(--tertiary-color);
+  }
+
+
+  .ProductThumb:hover {
+    background-color: var(--primary-color);
+  }
+
+  .ProductThumb-img,
+  .ProductThumb-content {
+    display: block;
+    vertical-align: none;
+    width: 100%;
+  }
+
+  .ProductThumb-img {
+    margin-bottom: 1.5rem;
+    max-height: none;
+    padding-right: 0;
+  }
+  .ProductThumb-img > img {
+    max-height: none;
+  }
+}

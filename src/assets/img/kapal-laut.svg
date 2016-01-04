@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g>
+	<rect fill="none" width="128" height="128"/>
+	<g>
+		<polygon fill="#FBB758" points="92,64 36,64 33,61 33,58 95,58 95,61 		"/>
+		<path fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" d="M82,87c-3.867,0-7-3.134-7-7c0,3.866-3.135,7-7,7
+			c-3.867,0-7-3.134-7-7c0,3.866-3.134,7-7,7s-7-3.134-7-7c0,3.866-3.134,7-7,7s-7-3.134-7-7"/>
+		<path fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" d="M89,70c0,3.866-3.135,7-7,7c-3.867,0-7-3.134-7-7
+			c0,3.866-3.135,7-7,7c-3.867,0-7-3.134-7-7c0,3.866-3.134,7-7,7s-7-3.134-7-7c0,3.866-3.134,7-7,7"/>
+		<polygon fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" points="92,64 36,64 33,61 33,58 95,58 95,61 		
+			"/>
+		<line fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" x1="43" y1="64" x2="43" y2="70"/>
+		<line fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" x1="57" y1="64" x2="57" y2="70"/>
+		<line fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" x1="71" y1="64" x2="71" y2="70"/>
+		<line fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" x1="85" y1="64" x2="85" y2="70"/>
+		<g>
+			<rect x="35" y="48" fill="#FFFFFF" width="47" height="10"/>
+			<g>
+				<rect x="43" y="36" fill="#FFFFFF" width="12" height="12"/>
+				
+					<rect x="43" y="36" fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" width="12" height="12"/>
+			</g>
+			
+				<rect x="35" y="48" fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" width="47" height="10"/>
+			
+				<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="47" y1="35" x2="47" y2="25"/>
+			
+				<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="51" y1="35" x2="51" y2="29"/>
+			<g>
+				<rect x="39" y="44" fill="#B2E0E6" width="23" height="4"/>
+				
+					<rect x="39" y="44" fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" width="23" height="4"/>
+			</g>
+			
+				<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="47" y1="39" x2="47" y2="41"/>
+			
+				<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="51" y1="39" x2="51" y2="41"/>
+			<rect x="38" y="53" fill="#F08B21" width="8" height="2"/>
+			<rect x="48" y="53" fill="#F08B21" width="8" height="2"/>
+			<rect x="58" y="53" fill="#F08B21" width="8" height="2"/>
+		</g>
+		<rect x="69" y="54" fill="#FFFFFF" width="24" height="4"/>
+		
+			<rect x="69" y="54" fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" width="24" height="4"/>
+		
+			<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="88" y1="30" x2="88" y2="54"/>
+		
+			<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="76" y1="48" x2="76" y2="30"/>
+		
+			<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="76" y1="42" x2="88" y2="42"/>
+		
+			<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="88" y1="42" x2="82" y2="48"/>
+		
+			<line fill="none" stroke="#4D5152" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="88" y1="42" x2="76" y2="30"/>
+		<polyline fill="none" stroke="#4D5152" stroke-width="2" stroke-miterlimit="10" points="74,27 74,30 90,30 90,27 		"/>
+	</g>
+</g>
+</svg>

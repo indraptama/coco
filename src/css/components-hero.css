@@ -1,0 +1,51 @@
+.Hero {
+  background-color: var(--secondary-dark);
+  display: table;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.Hero-img {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.Hero-content {
+  background: linear-gradient(to bottom, rgba(var(--bg-color), 0) 60%, rgba(var(--bg-color), 0.2) 70%, rgba(var(--bg-color), 0.95) 90%, rgba(var(--bg-color), 1) 100%);
+  display: table-cell;
+  padding-bottom: 1.5rem;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 2;
+}
+
+.Hero-content--bottom .Hero-content {
+  vertical-align: bottom;
+}
+
+.Hero--fadeWhite {
+  background: linear-gradient(to bottom, rgba(var(--bg-color), 0) 60%, rgba(var(--bg-color), 0.2) 70%, rgba(var(--bg-color), 0.95) 90%, rgba(var(--bg-color), 1) 100%);
+}
+
+.Hero-content * {
+  color: rgba(#fff, 0.97) !important;
+}
+
+.Hero-content h1 {
+  color: rgba(#fff, 0.97);
+  font-size: responsive 2.625rem 4.25rem;
+}
+
+.Hero-content .u-resType {
+  font-size: responsive 4.25rem 5.8rem;
+  line-height: 1;
+}

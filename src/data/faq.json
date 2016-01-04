@@ -1,0 +1,47 @@
+{
+  "title": "Frequently asked questions",
+  "description":"",
+  "faqs": {
+    "0": {
+      "question": "Does your coconut sugar certified organic ?",
+      "answer": "Yes, we are certified  USDA and EU by Control Union."
+    },
+    "1": {
+      "question": "",
+      "answer": ""
+    },
+    "2": {
+      "question": "Do you arrange OEM/ private label ?",
+      "answer": "Yes, we offer private labeling."
+    },
+    "3": {
+      "question": "How do you pack ?",
+      "answer": {
+        "0": "Transparent Can 10 Oz/ 283g, 1 box= 40 cans.",
+        "1": "Standing Pouch 1Lb/454g, I box= 30 Pouch.",
+        "2": "Bulk in paper sack/25 kgs."
+      }
+    },
+    "4": {
+      "question": "What is the MOQ",
+      "answer": {
+        "0": "Bulk packaging is 1 pallet =1,000kgs.",
+        "1": "Pouch 1 lb/454g is 1 pallet= 572 kgs",
+        "2": "Can 10 Oz/283g is 1 pallet= 475.5 kgs"
+      }
+    },
+    "5": {
+      "question": "What is the lead time ?",
+      "answer": "The leadtime is 3-6 weeks after receiving the advance payment, depending our schedule of the current order."
+    },
+    "6": {
+      "question": "Could you provide samples ?",
+      "answer": "<p>Yes we could provide samples free of charge, the courier cost is on yours . If you have shipping/ courier customer account, sample delivery will be arranged for a collect service.</p><p>Please fill out the form below, or alternatively send a direct email to us [cocogreenfarms@yahoo.com](mailto:cocogreenfarms@yahoo.com) . We are more than happy look forward to hearing from you.</p>"
+    },
+    "7": {
+      "question": "How are the payment terms ?",
+      "answer": "<p>We accept Telegraphic Transfer or LC.</p><ul><li>For smaller orders, three pallets and below, 100% advance full payment.</li><li>For orders three pallets and above, 50% advance payment, balance paid 5 working days prior to shipment or delivery.</li><li>Preferred method of payment is Wire Transfer.</li></ul>"
+    }
+
+  }
+}

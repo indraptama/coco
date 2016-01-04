@@ -1,0 +1,42 @@
+@import "suitcss-components-flex-embed";
+@import "suitcss-utils-flex";
+
+:root {
+  --bg-color: var(--primary-white);
+  --primary-white: #fafff4;
+  --secondary-dark: #001c0f;
+}
+
+.Hero {
+  background-color: var(--secondary-dark);
+  display: table;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.Hero-img {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0.9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.Hero-content {
+  background: linear-gradient(to bottom, rgba(var(--bg-color), 0) 60%, rgba(var(--bg-color), 0.2) 70%, rgba(var(--bg-color), 0.95) 90%, rgba(var(--bg-color), 1) 100%);
+  bottom: 0;
+  color: #fff;
+  height: 100%;
+  left: 0;
+  padding-bottom: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}

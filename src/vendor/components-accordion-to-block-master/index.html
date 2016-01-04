@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+  <link rel="stylesheet" href="lib/accordion-to-block.css">
+  
+  <style>
+    ul {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="accordionToBlock">
+    <h5 class="accordionToBlock-title">This Is Header</h5>
+    <ul class="accordionToBlock-content">
+      <li>This Is The COntent</li>
+      <li>This Is The COntent</li>
+      <li>This Is The COntent</li>
+      <li>This Is The COntent</li>
+      <li>This Is The COntent</li>
+    </ul>
+  </div>
+
+  <div class="accordionToBlock">
+    <h5 class="accordionToBlock-title">This Is Header</h5>
+    <ul class="accordionToBlock-content">
+      <li>This Is The COntent</li>
+      <li>This Is The COntent</li>
+      <li>This Is The COntent</li>
+      <li>This Is The COntent</li>
+      <li>
+          <div class="accordionToBlock">
+            <h5 class="accordionToBlock-title">This Is Header</h5>
+            <ul class="accordionToBlock-content">
+              <li>This Is The COntent inside li</li>
+              <li>This Is The COntent inside li</li>
+              <li>This Is The COntent inside li</li>
+              <li>This Is The COntent inside li</li>
+              <li>This Is The COntent inside li</li>
+            </ul>
+          </div>
+      </li>
+      <li>This Is The COntent</li>
+    </ul>
+  </div>
+
+
+
+<script src="accordionToBlock.js"></script>
+
+
+
+</body>
+</html>

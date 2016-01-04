@@ -1,85 +1,87 @@
+/* base */
+
 @import "./fonts.css";
 @import "suitcss-base";
-@import "suitcss-components-flex-embed";
+@import "./typo-sm.css";
+
+/* Components */
+
+
+
 @import "suitcss-components-grid";
-@import "gravitons";
-@import "suitcss-utils-size";
+@import "suitcss-components-flex-embed";
+@import "suitcss-components-button";
+
+
+/* utils */
+
 @import "suitcss-utils-flex";
+@import "suitcss-utils-size";
+@import "./utils-size-xl.css";
+@import "suitcss-utils-text";
+@import "gravitons";
 
-@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
-@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+:root {
+  --border-color: rgba(#26392f, 0.1);
+  --heading-font: sofia;
+  --primary-color: #9dce5c;
+  --primary-dark: #056839;
+  --primary-white: #fafff4;
+  --secondary-color: #8cc63f;
+  --secondary-dark: #001c0f;
+  --secondary-white: #f1ffdf;
+  --tertiary-color: #42a659;
+}
+
+:root {
+  --bg-color: var(--primary-white);
+}
+
+@custom-media --sm-viewport (max-width:640px);
+@custom-media --md-viewport (min-width:641px);
 @custom-media --lg-viewport (min-width:960px);
+@custom-media --xl-viewport (min-width:1280px);
 
-html {
-  background-color: #fafff4;
-  font-family: MuseoSans;
-}
-
-body {
-  color: rgba(#21392e, 0.875);
-  font-size: 0.875rem;
-  line-height: 1.3;
-}
 
 img {
   height: auto;
   max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgba(#4e2e28, 0.875);
-  font-family: MuseoSansR;
-  font-weight: 700;
+.ProductThumb {
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 250ms ease;
 }
 
-/*
- green500 = #4CAF50,
- brownChoco = #4E2E28
- yellow=#FFEB3B
- grey: #EEEEEE
- black=#222
- white: #fafafa
-*/
-
-.u-heightFull {
-  height: 100%;
+.ProductThumb:hover {
+  background-color: var(--secondary-color);
+  transition: background 250ms ease;
 }
 
-.bg-blue {
-  background-color: blue;
-}
-.bg-red {
-  background-color: red;
-}
-.bg-green {
-  background-color: green;
-}
-.bg-yellow {
-  background-color: yellow;
-}
-.bg-grey {
-  background-color: grey;
+.ProductThumb img {
+  max-height: 256px;
 }
 
-article p {
-  margin-bottom: 1.3em;
+@media (--md-viewport) {
+  .ProductThumb {
+    border-bottom: none;
+    border-right: 1px solid var(--border-color);
+  }
+
+  .Grid-cell:last-child .ProductThumb {
+    border-right: none;
+  }
 }
 
-.Card {
-  background-color: #fafff4;
-  margin: auto;
-  width: calc(100% - 16px);
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
 }
 
-.logo-sm {
-  width: 50%;
-}
-
-.forcePushY1 {
-  transform: translateY(-1.5rem);
+html {
+  background-color: var(--primary-white);
+  font-family: bariol;
+  font-weight: 400;
 }

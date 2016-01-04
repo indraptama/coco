@@ -1,0 +1,38 @@
+{
+  "0": {
+    "name": "Transparent Can",
+    "imgSrc":"assets/productcan-xs.png",
+    "itemWeight": 0.283,
+    "itemPerPack": 40,
+    "perPallet": 42,
+    "cbm": 2,
+    "20ContainerWPallet": 620,
+    "20ContainerWoPallet": 720,
+    "40ContainerWPallet": 1296,
+    "40ContainerWoPallet": 1500
+  },
+  "1": {
+    "name": "Standing Pouch",
+    "imgSrc":"assets/productpouch-xs.png",
+    "itemWeight": 0.454,
+    "itemPerPack": 30,
+    "perPallet": 42,
+    "cbm": 2,
+    "20ContainerWPallet": 620,
+    "20ContainerWoPallet": 720,
+    "40ContainerWPallet": 1296,
+    "40ContainerWoPallet": 1500
+  },
+  "2": {
+    "name": "paper sack",
+    "imgSrc":"assets/productsack-xs.png",
+    "itemWeight": 25,
+    "itemPerPack":1,
+    "perPallet": 40,
+    "cbm": 3,
+    "20ContainerWPallet": 545,
+    "20ContainerWoPallet": 588,
+    "40ContainerWPallet": 1016,
+    "40ContainerWoPallet": 1027
+  }
+}

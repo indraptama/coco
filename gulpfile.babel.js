@@ -4,6 +4,8 @@ import Webpack from 'webpack-stream';
 import runSequence from 'run-sequence';
 import browserSync, { reload } from 'browser-sync';
 import rimraf from 'rimraf';
+import jsonConcat from 'gulp-json-concat';
+
 
 gulp.task('webpack', () => {
   gulp.src('src/index.js')
@@ -27,6 +29,14 @@ gulp.task('browserSync', () => {
   });
 });
 
+gulp.task('jsonM', () => {
+  gulp.src('./src/data/*.json')
+  .pipe(jsonConcat('db.json', function(data) {
+    return new Buffer(JSON.stringify(data));
+  }))
+    .pipe(gulp.dest('dist/json'));
+});
+
 gulp.task('clean', cb => {
   rimraf('dist', cb);
 });
@@ -37,5 +47,5 @@ gulp.task('watchTask', () => {
 });
 
 gulp.task('dev', cb => {
-  runSequence('clean', ['browserSync', 'watchTask', 'html', 'webpack'], cb);
+  runSequence('clean', ['browserSync', 'watchTask', 'jsonM', 'html', 'webpack'], cb);
 });

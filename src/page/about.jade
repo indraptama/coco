@@ -1,22 +1,33 @@
-//- About Us, Faqs layout
 extends partial/default.jade
 block content
-  .Grid
-    .Grid-cell.u-md-size1of2.u-lg-size1of2
-      .FlexEmbed
-        .FlexEmbed-ratio.FlexEmbed-ratio--4by3
-        .FlexEmbed-content
-          .u-flex.u-flexJustifyCenter.u-flexAlignItemsCenter.u-heightFull.bg-yellow
-            img.logo-sm(src="assets/logo.png", alt="")
-    .Grid-cell.u-md-size1of2.u-lg-size1of2
-      .Card.forcePushY1
-        article.p2
-          h1.mb1 About Us
-          p We are an Indonesian company. We are a manufacturer and exporter of Organic coconut sugar. Located in Solo Central Java Indonesia, 55 minutes flight from Jakarta. It is just the centre of coconut farming in Java.
-          p We are dealing directly with our organic farmers, supporting an organic sustainable agriculture to aim greater live hoods for thousands of their families.
-          p Why we are dealing with organic coconut sugar , is concerning that this kind of sugar would give a high benefit, a huge advantages of wellness for the society.
-          p This organic sugar is not highly processed, without any preservatives , anti caking agent /additive /carrier or chemical added, it is just be processed naturally.
-          p By the unrefined, not highly processed so all the nutrition are still retain, besides the low Glycemic index. So with these all, we should say the organic Coconut sugar is a future healthier sugar/sweetener.
-          p Incase you are looking for the future healthier sweetener, you have just come to the right source.
+  .Grid.u-flexRowReverse
+    .Grid-cell.u-lg-size2of5.u-lg-posFixedLeft
+      .Hero.u-heightFull
+        .Hero-img.imgFill
+          img.imgFillSrc(src="assets/pohon2.jpg", alt="")
+        .Hero-content
+    .Grid-cell.u-lg-size3of5
+      article.mt4
+        .BlogPost
+          .BlogPost-header
+            .Container.Container--small.u-textCenter
+              img(src="assets/logo.png", alt="")
+          .BlogPost-content
+            .Container.Container--small.u-xl-column2
+              p
+                | We are an Indonesian company. We are a manufacturer and exporter of Organic coconut sugar. Located in Solo Central Java Indonesia, 55 minutes flight from Jakarta. It is just the center of coconut farming in Java.
+              p
+                | We are dealing directly with our organic farmers, supporting an organic sustainable agriculture to aim greater live hoods for thousands of their families.
+              p
+                | Why we are dealing with organic coconut sugar, is concerning that this kind of sugar would give a high benefit, a huge advantages of wellness for the humanity.
+              p
+                | This organic sugar is not highly processed, without any anti caking agent, preservatives, additive /carrier or chemical added, it is just processed naturally.
+              p
+                | By the unrefined, not highly processed so all the nutrition is still retain, besides the low Glycemic index. So with these all superiority, we should say the organic Coconut sugar is a 
+                strong future healthier sugar/sweetener.
+              p
+                | Incase you are looking for the future healthier sweetener, you have just come to the right source.
+    
+                
 
-          
+        

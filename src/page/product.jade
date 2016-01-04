@@ -1,40 +1,44 @@
 extends partial/default.jade
 block content
   section#ProductList
+    header
+      .u-md-size2of3
+        .Container.pt3.pb3
+          h4 OUR PRODUCTS
+          p.lead Our product are organic coconut sugar, Organic coconut syrup and organic coconut block.
     .Grid
-      .Grid-cell
-        .ProductList
-          .ProductList-img
-            img(src="assets/mock1.jpg", alt="")
-          .ProductList-content
-            .u-textCenter
-              h3 coconut sugar 1
-              p the best coconut sugar
-              a.Button.Button--primary.Button--small.mt1 View more
-      .Grid-cell
-        .ProductList
-          .ProductList-img
-            img(src="assets/mock2.jpg", alt="")
-          .ProductList-content
-            .u-textCenter
-              h3 coconut sugar 2
-              p the best coconut sugar
-              a.Button.Button--primary.Button--small.mt1 View more
-      .Grid-cell
-        .ProductList
-          .ProductList-img
-            img(src="assets/mock3.jpg", alt="")
-          .ProductList-content
-            .u-textCenter
-              h3 coconut sugar 3
-              p the best coconut sugar
-              a.Button.Button--primary.Button--small.mt1 View more
-      .Grid-cell
-        .ProductList
-          .ProductList-img
-            img(src="assets/mock4.jpg", alt="")
-          .ProductList-content
-            .u-textCenter
-              h3 coconut sugar 4
-              p the best coconut sugar
-              a.Button.Button--primary.Button--small.mt1 View more
+      .Grid-cell.u-lg-size1of2.u-xl-size1of3
+        .ProductThumb.FlexEmbed
+          .FlexEmbed-ratio.FlexEmbed-sm-ratio--16by9 
+          .FlexEmbed-content.u-flex.u-flexRow.u-md-flexCol.u-flexJustifyCenter.u-flexAlignItemsCenter.pr2.pl2
+              .ProductThumb-img.u-size1of4.pr2
+                a(href="/")
+                  img(src="assets/productcan-xs.png", alt="")
+              .u-size3of4
+                h3.ProductThumb-title Coconut Sugar Transparent Can
+                p with easy opening on top<br>Net W. 10oz/283g.
+                a(href="") Details
+      .Grid-cell.u-lg-size1of2.u-xl-size1of3
+        .ProductThumb.FlexEmbed
+          .FlexEmbed-ratio.FlexEmbed-sm-ratio--16by9 
+          .FlexEmbed-content.u-flex.u-flexRow.u-md-flexCol.u-flexJustifyCenter.u-flexAlignItemsCenter.pr2.pl2
+              .ProductThumb-img.u-size1of4.pr2
+                a(href="/")
+                  img(src="assets/productpouch-xs.png", alt="")
+              .u-size3of4
+                h3.ProductThumb-title Coconut Sugar Standing Pouch
+                p with easy opening on top<br>Net W. 10oz/283g.
+                a(href="") Details
+      .Grid-cell.u-lg-size1of2.u-xl-size1of3
+        .ProductThumb.FlexEmbed
+          .FlexEmbed-ratio.FlexEmbed-sm-ratio--16by9 
+          .FlexEmbed-content.u-flex.u-flexRow.u-md-flexCol.u-flexJustifyCenter.u-flexAlignItemsCenter.pr2.pl2
+              .ProductThumb-img.u-size1of4.pr2
+                a(href="/")
+                  img(src="assets/productsack-xs.png", alt="")
+              .u-size3of4
+                h3.ProductThumb-title Coconut Sugar Paper sack
+                p with easy opening on top<br>Net W. 10oz/283g.
+                a(href="") Details
+              
+          

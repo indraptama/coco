@@ -1,0 +1,17 @@
+#ProductList {
+  padding-top: 56px;
+}
+
+.ProductThumb {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.FlexEmbed-content {
+  background: rgba(var(--tertiary-color), 0);
+  transition: background 200ms ease;
+}
+
+.ProductThumb:hover .FlexEmbed-content {
+  background: rgba(var(--tertiary-color), 0.8);
+  transition: background 200ms ease;
+}

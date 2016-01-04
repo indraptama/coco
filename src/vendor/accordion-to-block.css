@@ -1,0 +1,31 @@
+  
+
+
+.accordionToBlock-title {
+
+}
+
+.accordionToBlock-content {
+  max-height: 1000px;
+  transition: max-height 200ms ease;
+  overflow: hidden;
+}
+
+/**
+ * State
+ */
+    
+.accordionToBlock-title.isNotActive {
+  
+}
+
+.accordionToBlock-title.isActive {
+  background-color: red;
+}
+
+.accordionToBlock-content.isHidden {
+  opacity: 0;
+  max-height: 0px;
+  visibility: hidden;
+  transition: max-height 200ms ease;
+}

@@ -1,0 +1,132 @@
+{
+  "title": "Export",
+  "shipmentOptions": {
+    "0": {
+      "name": "Less container load (LCL)",
+      "product": {
+        "0": {
+          "name": "sack",
+          "itemWeight": 25,
+          "itemPerPack":1,
+          "perPallet": 40,
+          "cbm": 3
+        },
+        "1": {
+          "name": "pouch",
+          "itemWeight": 0.454,
+          "itemPerPack": 30,
+          "perPallet": 42,
+          "cbm": 2
+        },
+        "2": {
+          "name": "Transparent Can",
+          "itemWeight": 0.283,
+          "itemPerPack": 40,
+          "perPallet": 42,
+          "cbm": 2
+        }
+      }
+    },
+    "1": {
+      "name": "Full container load",
+      "product": {
+        "0": {
+          "name": "sack",
+          "type" : "20 with Pallet",
+          "itemWeight": 25,
+          "itemPerPack":1,
+          "perPallet": 40,
+          "perContainer": 545
+        },
+        "1": {
+          "name": "sack",
+          "type" : "20 without Pallet",
+          "itemWeight": 25,
+          "itemPerPack":1,
+          "perPallet": 40,
+          "perContainer": 588
+        },
+        "2": {
+          "name": "pouch",
+          "type": "20 with pallet",
+          "itemWeight": 0.454,
+          "itemPerPack": 30,
+          "perPallet": 42,
+          "perContainer": 620
+        },
+        "3": {
+          "name": "pouch",
+          "type": "20 without pallet",
+          "itemWeight": 0.454,
+          "itemPerPack": 30,
+          "perPallet": 42,
+          "perContainer": 720
+        },
+        "4": {
+          "name": "Transparent Can",
+          "type": "20 with pallet",
+          "itemWeight": 0.283,
+          "itemPerPack": 40,
+          "perPallet": 42,
+          "perContainer": 620
+        },
+        "5": {
+          "name": "Transparent Can",
+          "type": "20 without pallet",
+          "itemWeight": 0.283,
+          "itemPerPack": 40,
+          "perPallet": 42,
+          "perContainer": 720
+        },
+        "6": {
+          "name": "sack",
+          "type" : "40 with Pallet",
+          "itemWeight": 25,
+          "itemPerPack":1,
+          "perPallet": 40,
+          "perContainer": 1016
+        },
+        "7": {
+          "name": "sack",
+          "type" : "40 without Pallet",
+          "itemWeight": 25,
+          "itemPerPack":1,
+          "perPallet": 40,
+          "perContainer": 1027
+        },
+        "8": {
+          "name": "pouch",
+          "type": "40 with pallet",
+          "itemWeight": 0.454,
+          "itemPerPack": 30,
+          "perPallet": 42,
+          "perContainer": 1296
+        },
+        "9": {
+          "name": "pouch",
+          "type": "40 without pallet",
+          "itemWeight": 0.454,
+          "itemPerPack": 30,
+          "perPallet": 42,
+          "perContainer": 1500
+        },
+        "10": {
+          "name": "Transparent Can",
+          "type": "40 with pallet",
+          "itemWeight": 0.283,
+          "itemPerPack": 40,
+          "perPallet": 42,
+          "perContainer": 1296
+        },
+        "11": {
+          "name": "Transparent Can",
+          "type": "40 without pallet",
+          "itemWeight": 0.283,
+          "itemPerPack": 40,
+          "perPallet": 42,
+          "perContainer": 1500
+        }
+      }
+    }
+  }
+}

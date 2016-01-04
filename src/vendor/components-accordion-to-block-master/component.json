@@ -1,0 +1,16 @@
+{
+  "name": "components-accordion-to-block",
+  "repo": "indraptama/components-accordion-to-block",
+  "version": "0.0.1",
+  "styles": [
+    "lib/accordion-to-block.css"
+  ],
+  "scripts":[
+    "accordionToBlock.js"
+  ],
+  "dependencies":{
+
+    },
+  "author": "Indra Pratama Putra",
+  "lisence": "MIT"
+}

@@ -1,0 +1,50 @@
+
+  {
+    "title": "Transparent Can",
+    "weight": "Net W. 10oz/283g",
+    "feature": "with easy opening on top",
+    "benefit": {
+      "0": {
+        "title": "Health Benefits",
+        "imgsrc":"assets/health.svg",
+        "description": "The organics coconut sugar is prepared the traditional way of first collecting the sap from the coconut palm, and then evaporate them by boiling it down to form the sweet sugar. This kind of minimal processing retains many of the trace minerals and vitamins that are lost in cane sugar production."
+      },
+      "1": {
+        "title": "Natural, Whole Food",
+        "imgsrc":"assets/natural.svg",
+        "description": "Our coconut sugar is not highly processed like brown sugar and many other sugars are. It is made by evaporating, boil the coconut sap. It is not synthesized like other sugar substitutes, but is harvested naturally from the coconut palm tree. It is from in the sap of the cut flowers bud of the coconut tree and does not have to be highly refined or processed to taste great."
+      },
+      "2": {
+        "title": "Contains Amino Acids",
+        "imgsrc":"assets/amino.svg",
+        "description": "It contains sixteen essential amino acids, such as glutamine, which is so important in a number of bodily processes. Glutamine is also used to make glutamic acid, which is involved in heart health and brain function."
+      },
+      "3": {
+        "title": "Contains Vitamins and Minerals",
+        "imgsrc":"assets/vitamins.svg",
+        "description": "Coconut sugar sap also contains high levels (compared to other sweeteners) of the minerals iron, zinc, magnesium, and potassium. It is a rich source of B-vitamins, which are important for physical health, as well as for our ability to manage stress. Coconut sap sugar is rich in other nutrients like inositol, which has been shown to improve mental functioning in clinical trials."
+      },
+      "4":{
+        "title": "Lower Glycemic",
+        "imgsrc":"assets/glycemic.svg",
+        "description": "Coconut sugar is a lower glycemic index food, which translates into it being <b>a healthier</b> alternative than cane sugar, which is a high glycemic index food. The glycemic index is a measurement of how a food affects our body's glucose levels. The higher the score, the greater our blood sugar will rise after eating the food. Coconut sugar rates at a 35 on the glycemic index while other sugars range from 65 up."
+      }
+    },
+    "usage": {
+      "0": {
+        "title":"",
+        "imgsrc":"assets/usage.svg",
+        "description": "Use coconut palm sugar in anywhere that you would use regular sugar. Which has a taste (light caramel) more like brown sugar than white sugar, and many people will prefer it, comparing to flat taste of regular sugar."
+      },
+      "1": {
+        "title": "Hot beverages",
+        "imgsrc":"assets/hot.svg",
+        "description": "Use it in hot coffee, hot milk, tea, or any beverage that  you use regular sugar."
+      },
+      "2": {
+        "title": "Any recipes",
+        "imgsrc":"assets/recipes.svg",
+        "description": "Any kind ingredient that uses sugar, just replace it with our organic coconut sugar for a lower glycemic impact! You will find exactly a new taste. A taste that will amaze you!"
+      }
+    }
+  }

@@ -3,111 +3,93 @@
   src: url("../assets/fonts/ionicons.ttf") format("truetype");
 }
 
-/* FIRA SANS */
 @font-face {
-  font-family: "FiraSans";
-  font-weight: 200;
-  src: url("../assets/fonts/FiraSans-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "FiraSans";
+  font-family: "doris";
+  font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/FiraSans-Book.ttf") format("truetype");
+  src: url("../assets/fonts/doris.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "FiraSans";
+  font-family: "daftbrush";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/daftbrush.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bariol";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/bariol.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bariol";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/bariol-i.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bariol";
+  font-style: normal;
   font-weight: 600;
-  src: url("../assets/fonts/FiraSans-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/bariol-b.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "FiraSans";
-  font-weight: 800;
-  src: url("../assets/fonts/FiraSans-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "ClearSans";
+  font-family: "sofia";
+  font-style: normal;
   font-weight: 300;
-  src: url("../assets/fonts/ClearSans-Light.ttf") format("truetype");
+  src: url("../assets/fonts/sofia-l.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "ClearSans";
-  font-weight: 400;
-  src: url("../assets/fonts/ClearSans-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "ClearSans";
-  font-weight: 800;
-  src: url("../assets/fonts/ClearSans-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ubuntu";
+  font-family: "sofia";
+  font-style: italic;
   font-weight: 300;
-  src: url("../assets/fonts/Ubuntu-L.ttf") format("truetype");
+  src: url("../assets/fonts/sofia-li.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Ubuntu";
+  font-family: "sofia";
+  font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/Ubuntu-R.ttf") format("truetype");
+  src: url("../assets/fonts/sofia.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Ubuntu";
-  font-weight: 700;
-  src: url("../assets/fonts/Ubuntu-M.ttf") format("truetype");
+  font-family: "sofia";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/sofia-i.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Ubuntu";
-  font-weight: 800;
-  src: url("../assets/fonts/Ubuntu-B.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "MuseoSans";
+  font-family: "sofia";
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/museo-sans-500.ttf") format("truetype");
+  src: url("../assets/fonts/sofia-m.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "MuseoSans";
+  font-family: "sofia";
   font-style: italic;
   font-weight: 500;
-  src: url("../assets/fonts/museo-sans-500-italic.ttf") format("truetype");
+  src: url("../assets/fonts/sofia-mi.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "coresans";
+  font-family: "sofia";
   font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/coresanses.otf") format("opentype");
+  font-weight: 600;
+  src: url("../assets/fonts/sofia-b.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "coresans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/coresansesbold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "MuseoSansR";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/MuseoSansRounded-700.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "MuseoSansR";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../assets/fonts/MuseoSansRounded-900.otf") format("opentype");
+  font-family: "sofia";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../assets/fonts/sofia-bi.ttf") format("truetype");
 }

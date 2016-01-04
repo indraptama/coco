@@ -1,0 +1,450 @@
+{
+  "about": {
+    "title": "About Us",
+    "content": "<p>We are an Indonesian company. We are  a manufacturer and exporter of  Organic coconut sugar. Located in Solo Central Java Indonesia, 55 minutes flight from Jakarta. It is just the center of coconut farming in Java.</p><p>We are dealing directly with our organic farmers,  supporting an organic sustainable agriculture to aim  greater live hoods for thousands of their families.</p><p>Why we are dealing with organic coconut sugar, is concerning that this kind of sugar would give a high benefit, a huge advantages of wellness for the humanity.</p><p>This organic sugar is not highly processed, without any anti caking agent, preservatives, additive /carrier or chemical added, it is just  processed naturally.</p><p>By the unrefined, not highly processed so all the nutrition is still retain, besides the low Glycemic index. So with these all superiority, we should say the organic Coconut sugar is a <b>future healthier sugar/sweetener</b>.</p><p>Incase you are looking for the future healthier sweetener, you have just come to the right source.</p>"
+  },
+  "benefit": {
+    "0": {
+      "title": "Low Glycemic Impact",
+      "imgSrc": "assets/statistic.svg",
+      "description": {
+        "0": "Organic coconut sugar has only 35 on the Glycemic Index, it means one of the lowest Glycemic index for sweetener.",
+        "1": "Glycemic Index(GI) is a measure of how a food raises blood glucose (or blood sugar) compared to a reference food (usually glucose or white bread). Our coconut sugar absorbs slowly into the bloodstream, instead of the sugar high and crash like cane sugar, while providing sustained energy for our body."
+      }
+    },
+    "1": {
+      "title": "Taste and flavor.",
+      "imgSrc": "assets/taste.svg",
+      "description": {
+        "0": "Organic Coconut sugar is more flavorful, it has a pleasant caramel-like flavor, the taste is great. It works well for baking , it is delightful in brownies, cookies, cakes and could be made as perfect topping for waffle, oatmeal and ice cream.",
+        "1": "For beverages, it dissolves in hot coffee, tea and also in cold liquids."
+      }
+    },
+    "2": {
+      "title": "Nutrition Content",
+      "imgSrc": "assets/heart.svg",
+      "description": {
+        "0": "Organic coconut sugar is nutritional super food, it contains amino acids, potassium, magnesium, zinc, iron and B and C vitamins, antioxidants that may also provide some health benefits.",
+        "1": "Then it contains a fiber called Inulin, which may slow glucose absorption and explain why coconut sugar has a lower glycemic index than regular table sugar."
+      }
+    },
+    "3": {
+      "title": "GMO Free and Organic",
+      "imgSrc": "assets/.svg",
+      "description": {
+        "0": "Our Organic coconut GMO free",
+        "1": "GMO is Genetic modification, also known as “genetic engineering,” is a technologically advanced way to select desirable traits in crops. While selective breeding has existed for thousands of years, modern biotechnology is more efficient and effective because seed developers are able to directly modify the genome of the crop."
+      }
+    },
+    "4": {
+      "title": "Earth Friendly",
+      "imgSrc": "assets/.svg",
+      "description": {
+        "0": "Coconut palm sugar is the most sustainable sweetener in the world.",
+        "1": "The Food and Agriculture Organization (FAO) of the World Bank reports that coconut palm sweeteners are the single most sustainable sweetener in the world!.",
+        "2": "The reason is because coconut palms are a tree crop which benefits the environment ecologically as they restore damaged soil requiring very little water in the process. In addition, coconut palms produce more sugar per acre than sugar cane (50-75% more) while at the same time using less than 20% of the soil nutrients and water for that high level of production (sap continues to flow for the next 2 decades)."
+      }
+    },
+    "5": {
+      "title": "Unrefined",
+      "imgSrc": "assets/nokimia.svg",
+      "description": {
+        "0": "Our coconut sugar is not highly processed like brown sugar and many other sugars are. It is made by evaporating, boil the coconut sap. It is not synthesized like other sugar substitutes, but is harvested naturally from the coconut palm tree. It is from in the sap of the cut flowers bud of the coconut tree and does not have to be highly refined or processed to taste great."
+      }
+    }
+  },
+  "contact": {
+    "name": "CV. Coco Green Farms",
+    "address": "Jl. Kana no 9, Grogol, Sukoharjo 57552. Central Java, Indonesia",
+    "phone": {
+      "0": "+62271621021",
+      "1": "+62271621246",
+      "2": "+62271623 376"
+    },
+    "email": "cocogreenfarms@yahoo.com",
+    "website": "www.cocogreenfarms.com"
+  },
+  "export": {
+    "title": "Export",
+    "shipmentOptions": {
+      "0": {
+        "name": "Less container load (LCL)",
+        "product": {
+          "0": {
+            "name": "sack",
+            "itemWeight": 25,
+            "itemPerPack": 1,
+            "perPallet": 40,
+            "cbm": 3
+          },
+          "1": {
+            "name": "pouch",
+            "itemWeight": 0.454,
+            "itemPerPack": 30,
+            "perPallet": 42,
+            "cbm": 2
+          },
+          "2": {
+            "name": "Transparent Can",
+            "itemWeight": 0.283,
+            "itemPerPack": 40,
+            "perPallet": 42,
+            "cbm": 2
+          }
+        }
+      },
+      "1": {
+        "name": "Full container load",
+        "product": {
+          "0": {
+            "name": "sack",
+            "type": "20 with Pallet",
+            "itemWeight": 25,
+            "itemPerPack": 1,
+            "perPallet": 40,
+            "perContainer": 545
+          },
+          "1": {
+            "name": "sack",
+            "type": "20 without Pallet",
+            "itemWeight": 25,
+            "itemPerPack": 1,
+            "perPallet": 40,
+            "perContainer": 588
+          },
+          "2": {
+            "name": "pouch",
+            "type": "20 with pallet",
+            "itemWeight": 0.454,
+            "itemPerPack": 30,
+            "perPallet": 42,
+            "perContainer": 620
+          },
+          "3": {
+            "name": "pouch",
+            "type": "20 without pallet",
+            "itemWeight": 0.454,
+            "itemPerPack": 30,
+            "perPallet": 42,
+            "perContainer": 720
+          },
+          "4": {
+            "name": "Transparent Can",
+            "type": "20 with pallet",
+            "itemWeight": 0.283,
+            "itemPerPack": 40,
+            "perPallet": 42,
+            "perContainer": 620
+          },
+          "5": {
+            "name": "Transparent Can",
+            "type": "20 without pallet",
+            "itemWeight": 0.283,
+            "itemPerPack": 40,
+            "perPallet": 42,
+            "perContainer": 720
+          },
+          "6": {
+            "name": "sack",
+            "type": "40 with Pallet",
+            "itemWeight": 25,
+            "itemPerPack": 1,
+            "perPallet": 40,
+            "perContainer": 1016
+          },
+          "7": {
+            "name": "sack",
+            "type": "40 without Pallet",
+            "itemWeight": 25,
+            "itemPerPack": 1,
+            "perPallet": 40,
+            "perContainer": 1027
+          },
+          "8": {
+            "name": "pouch",
+            "type": "40 with pallet",
+            "itemWeight": 0.454,
+            "itemPerPack": 30,
+            "perPallet": 42,
+            "perContainer": 1296
+          },
+          "9": {
+            "name": "pouch",
+            "type": "40 without pallet",
+            "itemWeight": 0.454,
+            "itemPerPack": 30,
+            "perPallet": 42,
+            "perContainer": 1500
+          },
+          "10": {
+            "name": "Transparent Can",
+            "type": "40 with pallet",
+            "itemWeight": 0.283,
+            "itemPerPack": 40,
+            "perPallet": 42,
+            "perContainer": 1296
+          },
+          "11": {
+            "name": "Transparent Can",
+            "type": "40 without pallet",
+            "itemWeight": 0.283,
+            "itemPerPack": 40,
+            "perPallet": 42,
+            "perContainer": 1500
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "description": "",
+    "faqs": {
+      "0": {
+        "question": "Does your coconut sugar certified organic ?",
+        "answer": "Yes, we are certified  USDA and EU by Control Union."
+      },
+      "1": {
+        "question": "",
+        "answer": ""
+      },
+      "2": {
+        "question": "Do you arrange OEM/ private label ?",
+        "answer": "Yes, we offer private labeling."
+      },
+      "3": {
+        "question": "How do you pack ?",
+        "answer": {
+          "0": "Transparent Can 10 Oz/ 283g, 1 box= 40 cans.",
+          "1": "Standing Pouch 1Lb/454g, I box= 30 Pouch.",
+          "2": "Bulk in paper sack/25 kgs."
+        }
+      },
+      "4": {
+        "question": "What is the MOQ",
+        "answer": {
+          "0": "Bulk packaging is 1 pallet =1,000kgs.",
+          "1": "Pouch 1 lb/454g is 1 pallet= 572 kgs",
+          "2": "Can 10 Oz/283g is 1 pallet= 475.5 kgs"
+        }
+      },
+      "5": {
+        "question": "What is the lead time ?",
+        "answer": "The leadtime is 3-6 weeks after receiving the advance payment, depending our schedule of the current order."
+      },
+      "6": {
+        "question": "Could you provide samples ?",
+        "answer": "<p>Yes we could provide samples free of charge, the courier cost is on yours . If you have shipping/ courier customer account, sample delivery will be arranged for a collect service.</p><p>Please fill out the form below, or alternatively send a direct email to us [cocogreenfarms@yahoo.com](mailto:cocogreenfarms@yahoo.com) . We are more than happy look forward to hearing from you.</p>"
+      },
+      "7": {
+        "question": "How are the payment terms ?",
+        "answer": "<p>We accept Telegraphic Transfer or LC.</p><ul><li>For smaller orders, three pallets and below, 100% advance full payment.</li><li>For orders three pallets and above, 50% advance payment, balance paid 5 working days prior to shipment or delivery.</li><li>Preferred method of payment is Wire Transfer.</li></ul>"
+      }
+    }
+  },
+  "news": {
+    "0": {
+      "date": "2015/11/11",
+      "title": "SIAL Interfood exhibition",
+      "content": "we participated in the SIAL Interfood exhibition. There was a huge visitors and so many of them were interested in our organic coconut sugar. They come from some countries eg, Singapore, Malaysia, Japan, China, Saudi Arabia, Hongary etc"
+    }
+  },
+  "product-can": {
+    "title": "Transparent Can",
+    "weight": "Net W. 10oz/283g",
+    "feature": "with easy opening on top",
+    "benefit": {
+      "0": {
+        "title": "Health Benefits",
+        "imgsrc": "assets/health.svg",
+        "description": "The organics coconut sugar is prepared the traditional way of first collecting the sap from the coconut palm, and then evaporate them by boiling it down to form the sweet sugar. This kind of minimal processing retains many of the trace minerals and vitamins that are lost in cane sugar production."
+      },
+      "1": {
+        "title": "Natural, Whole Food",
+        "imgsrc": "assets/natural.svg",
+        "description": "Our coconut sugar is not highly processed like brown sugar and many other sugars are. It is made by evaporating, boil the coconut sap. It is not synthesized like other sugar substitutes, but is harvested naturally from the coconut palm tree. It is from in the sap of the cut flowers bud of the coconut tree and does not have to be highly refined or processed to taste great."
+      },
+      "2": {
+        "title": "Contains Amino Acids",
+        "imgsrc": "assets/amino.svg",
+        "description": "It contains sixteen essential amino acids, such as glutamine, which is so important in a number of bodily processes. Glutamine is also used to make glutamic acid, which is involved in heart health and brain function."
+      },
+      "3": {
+        "title": "Contains Vitamins and Minerals",
+        "imgsrc": "assets/vitamins.svg",
+        "description": "Coconut sugar sap also contains high levels (compared to other sweeteners) of the minerals iron, zinc, magnesium, and potassium. It is a rich source of B-vitamins, which are important for physical health, as well as for our ability to manage stress. Coconut sap sugar is rich in other nutrients like inositol, which has been shown to improve mental functioning in clinical trials."
+      },
+      "4": {
+        "title": "Lower Glycemic",
+        "imgsrc": "assets/glycemic.svg",
+        "description": "Coconut sugar is a lower glycemic index food, which translates into it being <b>a healthier</b> alternative than cane sugar, which is a high glycemic index food. The glycemic index is a measurement of how a food affects our body's glucose levels. The higher the score, the greater our blood sugar will rise after eating the food. Coconut sugar rates at a 35 on the glycemic index while other sugars range from 65 up."
+      }
+    },
+    "usage": {
+      "0": {
+        "title": "",
+        "imgsrc": "assets/usage.svg",
+        "description": "Use coconut palm sugar in anywhere that you would use regular sugar. Which has a taste (light caramel) more like brown sugar than white sugar, and many people will prefer it, comparing to flat taste of regular sugar."
+      },
+      "1": {
+        "title": "Hot beverages",
+        "imgsrc": "assets/hot.svg",
+        "description": "Use it in hot coffee, hot milk, tea, or any beverage that  you use regular sugar."
+      },
+      "2": {
+        "title": "Any recipes",
+        "imgsrc": "assets/recipes.svg",
+        "description": "Any kind ingredient that uses sugar, just replace it with our organic coconut sugar for a lower glycemic impact! You will find exactly a new taste. A taste that will amaze you!"
+      }
+    }
+  },
+  "product-pouch": {
+    "title": "Standing Pouch",
+    "weight": "Net W. 1Lb/16 oz/454g",
+    "feature": "",
+    "benefit": {
+      "0": {
+        "title": "Health Benefits",
+        "imgsrc": "assets/health.svg",
+        "description": "The organics coconut sugar is prepared the traditional way of first collecting the sap from the coconut palm, and then evaporate them by boiling it down to form the sweet sugar. This kind of minimal processing retains many of the trace minerals and vitamins that are lost in cane sugar production."
+      },
+      "1": {
+        "title": "Natural, Whole Food",
+        "imgsrc": "assets/natural.svg",
+        "description": "Our coconut sugar is not highly processed like brown sugar and many other sugars are. It is made by evaporating, boil the coconut sap. It is not synthesized like other sugar substitutes, but is harvested naturally from the coconut palm tree. It is from in the sap of the cut flowers bud of the coconut tree and does not have to be highly refined or processed to taste great."
+      },
+      "2": {
+        "title": "Contains Amino Acids",
+        "imgsrc": "assets/amino.svg",
+        "description": "It contains sixteen essential amino acids, such as glutamine, which is so important in a number of bodily processes. Glutamine is also used to make glutamic acid, which is involved in heart health and brain function."
+      },
+      "3": {
+        "title": "Contains Vitamins and Minerals",
+        "imgsrc": "assets/vitamins.svg",
+        "description": "Coconut sugar sap also contains high levels (compared to other sweeteners) of the minerals iron, zinc, magnesium, and potassium. It is a rich source of B-vitamins, which are important for physical health, as well as for our ability to manage stress. Coconut sap sugar is rich in other nutrients like inositol, which has been shown to improve mental functioning in clinical trials."
+      },
+      "4": {
+        "title": "Lower Glycemic",
+        "imgsrc": "assets/glycemic.svg",
+        "description": "Coconut sugar is a lower glycemic index food, which translates into it being <b>a healthier</b> alternative than cane sugar, which is a high glycemic index food. The glycemic index is a measurement of how a food affects our body's glucose levels. The higher the score, the greater our blood sugar will rise after eating the food. Coconut sugar rates at a 35 on the glycemic index while other sugars range from 65 up."
+      }
+    },
+    "usage": {
+      "0": {
+        "title": "",
+        "imgsrc": "assets/usage.svg",
+        "description": "Use coconut palm sugar in anywhere that you would use regular sugar. Which has a taste (light caramel) more like brown sugar than white sugar, and many people will prefer it, comparing to flat taste of regular sugar."
+      },
+      "1": {
+        "title": "Hot beverages",
+        "imgsrc": "assets/hot.svg",
+        "description": "Use it in hot coffee, hot milk, tea, or any beverage that  you use regular sugar."
+      },
+      "2": {
+        "title": "Any recipes",
+        "imgsrc": "assets/recipes.svg",
+        "description": "Any kind ingredient that uses sugar, just replace it with our organic coconut sugar for a lower glycemic impact! You will find exactly a new taste. A taste that will amaze you!"
+      }
+    }
+  },
+  "product-sack": {
+    "title": "Paper sack",
+    "weight": "NNet W. 25 kg",
+    "feature": "",
+    "benefit": {
+      "0": {
+        "title": "Health Benefits",
+        "imgsrc": "assets/health.svg",
+        "description": "The organics coconut sugar is prepared the traditional way of first collecting the sap from the coconut palm, and then evaporate them by boiling it down to form the sweet sugar. This kind of minimal processing retains many of the trace minerals and vitamins that are lost in cane sugar production."
+      },
+      "1": {
+        "title": "Natural, Whole Food",
+        "imgsrc": "assets/natural.svg",
+        "description": "Our coconut sugar is not highly processed like brown sugar and many other sugars are. It is made by evaporating, boil the coconut sap. It is not synthesized like other sugar substitutes, but is harvested naturally from the coconut palm tree. It is from in the sap of the cut flowers bud of the coconut tree and does not have to be highly refined or processed to taste great."
+      },
+      "2": {
+        "title": "Contains Amino Acids",
+        "imgsrc": "assets/amino.svg",
+        "description": "It contains sixteen essential amino acids, such as glutamine, which is so important in a number of bodily processes. Glutamine is also used to make glutamic acid, which is involved in heart health and brain function."
+      },
+      "3": {
+        "title": "Contains Vitamins and Minerals",
+        "imgsrc": "assets/vitamins.svg",
+        "description": "Coconut sugar sap also contains high levels (compared to other sweeteners) of the minerals iron, zinc, magnesium, and potassium. It is a rich source of B-vitamins, which are important for physical health, as well as for our ability to manage stress. Coconut sap sugar is rich in other nutrients like inositol, which has been shown to improve mental functioning in clinical trials."
+      },
+      "4": {
+        "title": "Lower Glycemic",
+        "imgsrc": "assets/glycemic.svg",
+        "description": "Coconut sugar is a lower glycemic index food, which translates into it being <b>a healthier</b> alternative than cane sugar, which is a high glycemic index food. The glycemic index is a measurement of how a food affects our body's glucose levels. The higher the score, the greater our blood sugar will rise after eating the food. Coconut sugar rates at a 35 on the glycemic index while other sugars range from 65 up."
+      }
+    },
+    "usage": {
+      "0": {
+        "title": "",
+        "imgsrc": "assets/usage.svg",
+        "description": "Use coconut palm sugar in anywhere that you would use regular sugar. Which has a taste (light caramel) more like brown sugar than white sugar, and many people will prefer it, comparing to flat taste of regular sugar."
+      },
+      "1": {
+        "title": "Hot beverages",
+        "imgsrc": "assets/hot.svg",
+        "description": "Use it in hot coffee, hot milk, tea, or any beverage that  you use regular sugar."
+      },
+      "2": {
+        "title": "Any recipes",
+        "imgsrc": "assets/recipes.svg",
+        "description": "Any kind ingredient that uses sugar, just replace it with our organic coconut sugar for a lower glycemic impact! You will find exactly a new taste. A taste that will amaze you!"
+      }
+    }
+  },
+  "product": {
+    "0": {
+      "name": "Transparent Can",
+      "imgSrc": "assets/productcan-xs.png",
+      "itemWeight": 0.283,
+      "itemPerPack": 40,
+      "perPallet": 42,
+      "cbm": 2,
+      "20ContainerWPallet": 620,
+      "20ContainerWoPallet": 720,
+      "40ContainerWPallet": 1296,
+      "40ContainerWoPallet": 1500
+    },
+    "1": {
+      "name": "Standing Pouch",
+      "imgSrc": "assets/productpouch-xs.png",
+      "itemWeight": 0.454,
+      "itemPerPack": 30,
+      "perPallet": 42,
+      "cbm": 2,
+      "20ContainerWPallet": 620,
+      "20ContainerWoPallet": 720,
+      "40ContainerWPallet": 1296,
+      "40ContainerWoPallet": 1500
+    },
+    "2": {
+      "name": "paper sack",
+      "imgSrc": "assets/productsack-xs.png",
+      "itemWeight": 25,
+      "itemPerPack": 1,
+      "perPallet": 40,
+      "cbm": 3,
+      "20ContainerWPallet": 545,
+      "20ContainerWoPallet": 588,
+      "40ContainerWPallet": 1016,
+      "40ContainerWoPallet": 1027
+    }
+  },
+  "reason": {
+    "title": "Why should organic Coconut sugar?",
+    "body": "<p>Coconut sugar (also called coconut palm sugar ) has become a popular alternative to white sugar due to its flavor and perceived health benefits. It’s also viewed as being unrefined ,much more natural, or less highly processed, than table sugar.</p><p>It is natural made from coconut sap, which is the sugary circulating fluid of the coconut plant.</p><p>Coconut sugar is made in 2 natural steps process:</p><ul><li>a cut is made on the flower bud of the coconut palm and the liquid sap called neera is collected in to the containers, twice a day by the farmers.</li><li>The neera then is placed under heat until most of the water has evaporated. As the water evaporates, it starts to transform in to the thick syrup-like substance. From this form  it is further reduced to crystal.</li></ul><p>During the process, from the liquid sap till granulated coconut sugar, there is no other ingredient or chemical added at all. Hence everything is natural and unrefined.</p>"
+  },
+  "service": {
+    "title": "Our Services",
+    "description": "<p>Our company would be more than happy to provide you in 3 different services.</p><p>We could provide you with our own label, with private label and the last is bulk orders.</p><p>Pricing for our own label and private label depends on the quantity, the type of packaging, also size of per package.</p>",
+    "services": {
+      "0": "",
+      "1": "",
+      "2": ""
+    }
+  }
+}

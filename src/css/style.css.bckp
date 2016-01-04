@@ -1,19 +1,63 @@
+/* base */
+
 @import "./fonts.css";
 @import "suitcss-base";
+@import "./typo-sm.css";
+
+/* Components */
+
+@import "./components-hero.css";
+@import "./components-blog-post.css";
+@import "suitcss-components-grid";
+@import "suitcss-components-flex-embed";
+@import "suitcss-components-button";
+@import "./components-product-thumb.css";
+
+/* utils */
+
+@import "suitcss-utils-flex";
+@import "suitcss-utils-size";
+@import "./utils-size-xl.css";
+@import "suitcss-utils-text";
+@import "gravitons";
+
+:root {
+  --border-color: rgba(#26392f, 0.1);
+  --heading-font: sofia;
+  --primary-color: #9dce5c;
+  --primary-dark: #056839;
+  --primary-white: #fafff4;
+  --secondary-color: #8cc63f;
+  --secondary-dark: #001c0f;
+  --secondary-white: #f1ffdf;
+  --tertiary-color: #42a659;
+}
+
+:root {
+  --bg-color: var(--primary-white);
+}
+
+@custom-media --sm-viewport (max-width:640px);
+@custom-media --md-viewport (min-width:641px);
+@custom-media --lg-viewport (min-width:960px);
+@custom-media --xl-viewport (min-width:1280px);
+
+.MainHeader {
+  background-color: #fff;
+  height: 56px;
+  left: 0;
+  padding: 0 1.5rem;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
 
 html {
-  font-family: MuseoSans;
-}
-
-body {
-  color: rgba(#444, 0.875);
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
+  background-color: var(--bg-color);
+  color: var(--secondary-dark);
+  font-family: bariol;
+  font-size: 100%;
 }
 
 h1,
@@ -22,75 +66,120 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(#4e2e28, 0.875);
-  font-family: MuseoSansR;
-  font-weight: 900;
+  color: var(--tertiary-color);
+  font-family: var(--heading-font);
 }
 
-.icon {
-  font-family: ionicons;
-  font-size: 24px;
-  text-transform: none;
+.test {
+  height: 64px;
+  width: auto;
 }
 
-.icon-large {
-  font-size: 32px;
-}
-
-.icon-white {
-  color: rgba(#fff, 0.875);
-}
-
-.ProductList {
-  align-items: center;
-  border-bottom: 1px solid #eee;
+.Media {
   display: flex;
-  justify-content: center;
-  padding: 16px;
-  position: relative;
-  width: 100%;
 }
 
-.ProductList-img {
-  width: 30%;
+.Media-img {
+  margin-right: 1rem;
 }
 
-/* #ProductList .Grid-cell:nth-child(odd) .ProductList {
-  flex-direction: row-reverse;
-} */
-
-.ProductList-content {
+.Media--itemMiddle {
   align-items: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  width: 70%;
 }
 
-.ProductList-contentTitle {
-  text-transform: uppercase;
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 112.5%;
+    line-height: 1.4;
+  }
 }
 
-@import "./components-button.css";
-@import "suitcss-components-grid";
-@import "gravitons";
-@import "suitcss-utils-size";
-@import "mainheader.css";
-@import "hero.css";
-
-/*
- green500 = #4CAF50,
- brownChoco = #4E2E28
- yellow=#FFEB3B
- grey: #EEEEEE
- black=#222
- white: #fafafa
-*/
-
-.u-textCenter {
-  text-align: center;
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 125%;
+  }
 }
 
-.Product-list {
-  padding: 16px;
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.logo-small {
+  margin: 8px 0;
+  max-height: 40px;
+}
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.Container--small {
+  max-width: 40rem;
+}
+
+.u-heightFull {
+  height: 100vh;
+}
+
+@media (--md-viewport) {
+  .u-md-fullHeight {
+    height: 100vh;
+  }
+}
+
+@media (--lg-viewport) {
+  .u-lg-height3of4 {
+    height: 75vh;
+  }
+
+  .u-lg-posFixedLeft {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+  }
+}
+
+@media (--xl-viewport) {
+  .u-xl-column2 {
+    column-count: 2;
+    column-gap: 1.5rem;
+  }
+}
+
+.u-fancyText {
+  font-family: daftbrush;
+  font-weight: 400 !important;
+}
+
+@media (--sm-viewport) {
+  /**
+ * Modifier: 2:1 aspect ratio
+ */
+
+  .FlexEmbed-sm-ratio--2by1 {
+    padding-bottom: 50%;
+  }
+
+  /**
+ * Modifier: 16:9 aspect ratio
+ */
+
+  .FlexEmbed-sm-ratio--16by9 {
+    padding-bottom: 56.25%;
+  }
+
+  /**
+ * Modifier: 4:3 aspect ratio
+ */
+
+  .FlexEmbed-sm-ratio--4by3 {
+    padding-bottom: 75%;
+  }
 }

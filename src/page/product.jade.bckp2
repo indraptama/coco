@@ -1,0 +1,39 @@
+extends partial/default.jade
+block content
+  section#ProductList
+    header
+      .u-md-size2of3
+        .Container.pt3.pb3
+          h4 OUR PRODUCTS
+          p.lead Our product are organic coconut sugar, Organic coconut syrup and organic coconut block.
+    .Grid.Grid--equalHeight
+      .Grid-cell.u-md-size1of3
+        .ProductThumb
+          .ProductThumb-img
+            a(href="http://", target="_blank") 
+              img(src="./assets/productcan-xs.png", alt="")
+          .ProductThumb-content
+            h3.ProductThumb-title Coconut Sugar<br>Transparent Can
+            p with easy opening on top<br>Net W. 10oz/283g. 
+            .ProductThumb-action
+              a.Button.Button--small(href="") Details
+      .Grid-cell.u-md-size1of3
+        .ProductThumb
+          .ProductThumb-img
+            a(href="http://", target="_blank") 
+              img(src="./assets/productpouch-xs.png", alt="")
+          .ProductThumb-content
+            h3.ProductThumb-title Coconut Sugar<br>Standing Pouch
+            p Net W. 1Lb/16 oz/454g
+            .ProductThumb-action
+              a.Button.Button--small(href="") Details
+      .Grid-cell.u-md-size1of3
+        .ProductThumb
+          .ProductThumb-img
+            a(href="http://", target="_blank") 
+              img(src="./assets/productsack-xs.png", alt="")
+          .ProductThumb-content
+            h3.ProductThumb-title Coconut Sugar<br>Paper Sack
+            p Net W. 25Kg
+            .ProductThumb-action
+              a.Button.Button--small(href="") Details

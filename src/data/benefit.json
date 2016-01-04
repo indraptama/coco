@@ -1,0 +1,51 @@
+{
+  "0": {
+    "title": "Low Glycemic Impact",
+    "imgSrc": "assets/statistic.svg",
+    "description": {
+      "0": "Organic coconut sugar has only 35 on the Glycemic Index, it means one of the lowest Glycemic index for sweetener.",
+      "1": "Glycemic Index(GI) is a measure of how a food raises blood glucose (or blood sugar) compared to a reference food (usually glucose or white bread). Our coconut sugar absorbs slowly into the bloodstream, instead of the sugar high and crash like cane sugar, while providing sustained energy for our body."
+    }
+  },
+  "1": {
+    "title": "Taste and flavor.",
+    "imgSrc":"assets/taste.svg",
+    "description": {
+      "0": "Organic Coconut sugar is more flavorful, it has a pleasant caramel-like flavor, the taste is great. It works well for baking , it is delightful in brownies, cookies, cakes and could be made as perfect topping for waffle, oatmeal and ice cream.",
+      "1": "For beverages, it dissolves in hot coffee, tea and also in cold liquids."
+    }
+  },
+  "2": {
+    "title": "Nutrition Content",
+    "imgSrc":"assets/heart.svg",
+    "description": {
+      "0": "Organic coconut sugar is nutritional super food, it contains amino acids, potassium, magnesium, zinc, iron and B and C vitamins, antioxidants that may also provide some health benefits.",
+      "1": "Then it contains a fiber called Inulin, which may slow glucose absorption and explain why coconut sugar has a lower glycemic index than regular table sugar."
+    }
+  },
+  "3": {
+    "title": "GMO Free and Organic",
+    "imgSrc": "assets/.svg",
+    "description": {
+      "0": "Our Organic coconut GMO free",
+      "1": "GMO is Genetic modification, also known as “genetic engineering,” is a technologically advanced way to select desirable traits in crops. While selective breeding has existed for thousands of years, modern biotechnology is more efficient and effective because seed developers are able to directly modify the genome of the crop."
+    }
+  },
+  "4": {
+    "title": "Earth Friendly",
+    "imgSrc": "assets/.svg",
+    "description": {
+      "0": "Coconut palm sugar is the most sustainable sweetener in the world.",
+      "1": "The Food and Agriculture Organization (FAO) of the World Bank reports that coconut palm sweeteners are the single most sustainable sweetener in the world!.",
+      "2": "The reason is because coconut palms are a tree crop which benefits the environment ecologically as they restore damaged soil requiring very little water in the process. In addition, coconut palms produce more sugar per acre than sugar cane (50-75% more) while at the same time using less than 20% of the soil nutrients and water for that high level of production (sap continues to flow for the next 2 decades)."
+    }
+  },
+  "5": {
+    "title": "Unrefined",
+    "imgSrc": "assets/nokimia.svg",
+    "description": {
+      "0": "Our coconut sugar is not highly processed like brown sugar and many other sugars are. It is made by evaporating, boil the coconut sap. It is not synthesized like other sugar substitutes, but is harvested naturally from the coconut palm tree. It is from in the sap of the cut flowers bud of the coconut tree and does not have to be highly refined or processed to taste great."
+    }
+  }
+
+}

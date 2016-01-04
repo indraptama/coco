@@ -1,0 +1,34 @@
+extends partial/default.jade
+block content
+  section#ProductList
+    .Grid
+      .Grid-cell.u-md-size1of3
+        .ProductThumb.u-md-fullHeight
+          .ProductThumb-img
+            a(href="http://", target="_blank") 
+              img(src="./assets/productcan-xs.png", alt="")
+          .ProductThumb-content
+            h3.ProductThumb-title Transparent Can
+            p with easy opening on top<br>Net W. 10oz/283g. 
+            .ProductThumb-action
+              a.Button.Button--small(href="") Details
+      .Grid-cell.u-md-size1of3
+        .ProductThumb.u-md-fullHeight
+          .ProductThumb-img
+            a(href="http://", target="_blank") 
+              img(src="./assets/productpouch-xs.png", alt="")
+          .ProductThumb-content
+            h3.ProductThumb-title Standing Pouch
+            p Net W. 1Lb/16 oz/454g
+            .ProductThumb-action
+              a.Button.Button--small(href="") Details
+      .Grid-cell.u-md-size1of3
+        .ProductThumb.u-md-fullHeight
+          .ProductThumb-img
+            a(href="http://", target="_blank") 
+              img(src="./assets/productsack-xs.png", alt="")
+          .ProductThumb-content
+            h3.ProductThumb-title Paper Sack
+            p Net W. 25Kg
+            .ProductThumb-action
+              a.Button.Button--small(href="") Details

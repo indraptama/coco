@@ -1,0 +1,23 @@
+@import "suitcss-utils-flex";
+@import "suitcss-utils-size";
+
+:root {
+  --secondary-dark: #001c0f;
+}
+
+.TopHeader {
+  background-color: rgba(var(--secondary-dark), 0.875);
+  height: 48px;
+  left: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.logo-s img {
+  max-height: 32px;
+  width: auto;
+}
