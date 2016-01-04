@@ -6,12 +6,10 @@
 
 /* Components */
 
-
-
 @import "suitcss-components-grid";
 @import "suitcss-components-flex-embed";
 @import "suitcss-components-button";
-
+@import "./components-hero.css";
 
 /* utils */
 
@@ -41,7 +39,6 @@
 @custom-media --md-viewport (min-width:641px);
 @custom-media --lg-viewport (min-width:960px);
 @custom-media --xl-viewport (min-width:1280px);
-
 
 img {
   height: auto;
@@ -80,8 +77,21 @@ img {
   max-width: 1400px;
 }
 
+.Container--medium {
+  max-width: 960px;
+}
+
 html {
   background-color: var(--primary-white);
+  color: var(--secondary-dark);
   font-family: bariol;
   font-weight: 400;
+}
+
+.Button {
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
 }

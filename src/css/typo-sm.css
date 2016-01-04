@@ -7,6 +7,15 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--tertiary-color);
+}
+
 h1 {
   font-family: var(--heading-font);
   font-size: 4.25rem;
@@ -111,4 +120,11 @@ a {
   line-height: 2rem;
   margin-bottom: 1.1328125rem;
   margin-top: 1.3125rem;
+}
+
+.u-resH4ToH2 {
+  font-size: responsive 1.618rem 2.625rem;
+  line-height: 1.1;
+  margin-bottom: 0.65em;
+  margin-top: 0.65em;
 }

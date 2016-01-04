@@ -15,8 +15,8 @@ const cssNot = require('postcss-selector-not');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  // debug: true,
-  // devtool: '#eval-source-map',
+  debug: true,
+  devtool: '#eval-source-map',
   context: path.join(__dirname, 'src'),
   entry: [
     'webpack/hot/dev-server',
@@ -35,8 +35,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false } }),
+    new webpack.optimize.UglifyJsPlugin({compress: { warnings: false } }),
   ],
   module: {
     loaders: [

@@ -8,7 +8,7 @@
     <div class="u-size3of4 u-md-sizeFull u-textCenter pl2">
       <h3>{opts.name}</h3>
       <p>{opts.weight}</p>
-      <a href="#" class="">View Details</a>
+      <a href="#" class="Button">View Details</a>
     </div>
   </div>
 </product-thumb>

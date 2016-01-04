@@ -5,7 +5,9 @@ require('./asset.js');
 
 import './component-riot/product-thumb/product-thumb.tag';
 import './component-riot/top-header/top-header.tag';
-import './components/test.tag';
+import './component-riot/hero/hero.tag';
+import './routes/product.tag';
+
 import riot from 'riot';
 
 riot.mount('app');
